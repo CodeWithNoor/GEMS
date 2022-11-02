@@ -1,0 +1,36 @@
+.footer__newsletter{
+    max-width: 1680px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.card-body{
+    flex-direction: column;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 0px;
+    font-size: 16px;
+    background-color: #1b1b1b;
+}
+.card-body > p{
+    color: white;
+}
+
+.card-body > div > input{
+    padding: 14px 14px;
+    margin-top: 10px;
+    margin-right: 20px;
+    border: none;
+}
+
+.Footer_link_Linklist{
+    list-style: none;
+}
+
+.Linklist__Item > a{
+    text-decoration: none;
+    color: white;
+    padding: 5px 8px;
+}
