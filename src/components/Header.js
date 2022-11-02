@@ -9,19 +9,19 @@ const Header = () => {
         <div className="navBar__left">Left</div>
         <div className="navBar__center"><img src="https://cdn.shopify.com/s/files/1/0508/7461/3942/files/sound-logo_18x.png?v=1626159675" alt="SoundPeats" /></div>
         <div className="navBar__right d-flex align-items-center justify-content-between text-white">
-          <div class="dropdown">
-            <button class="btn dropdown-toggle text-white" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+          <div class="dropdown navBar__currency px-0 py-0">
+            <button class="btn dropdown-toggle text-white fw-bold px-0 py-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
               USD$
             </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-              <li><button class="dropdown-item" href="#">CNY¥</button></li>
-              <li><button class="dropdown-item" href="#">EUR€</button></li>
-              <li><button class="dropdown-item" href="#">MXN$</button></li>
+            <ul class="dropdown-menu w-100 " aria-labelledby="dropdownMenuButton1">
+              <li><button class="dropdown-item fw-bold border-bottom-0 px-0 py-1" href="#">CNY¥</button></li>
+              <li><button class="dropdown-item fw-bold border border-bottom-0 px-0 py-1" href="#">EUR€</button></li>
+              <li><button class="dropdown-item fw-bold border border-bottom-0 px-0 py-1" href="#">MXN$</button></li>
             </ul>
           </div>
           <i className="fa-solid fa-magnifying-glass"></i>
           <i className="fa-regular fa-user"></i>
-          <i class="fa-solid fa-cart-shopping"></i>
+          <i class="fa-solid fa-cart-shopping px-0 py-0"></i>
           <div class="dropdown">
             <button class="btn dropdown-toggle text-white" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
               <img src="https://cdn.weglot.com/flags/circle/us.svg" alt="American" />

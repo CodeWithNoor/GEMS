@@ -8,6 +8,28 @@
     padding: 18px 60px;
 }
   
+.navBar__right{
+    font-size: 12px!important;
+}
+/* .navBar__currency{
+    padding: 2px 18px 2px 0;
+} */
+.navBar__currency> button{
+    font-size: 12px;
+    border: none;
+}
+/* .navBar__currency> button:active{
+} */
+.navBar__currency>.dropdown-menu{
+    min-width: 25%;
+}
+.navBar__currency>ul>li> button{
+    font-size: 12px;
+    /* border-bottom: 1px solid grey; */
+}
+
+
+
   /* @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
