@@ -1,0 +1,14 @@
+.header__topBar{
+    padding: 12px 15px;
+    font-size: 11px;
+}
+
+.header__navBar{
+    height: 66px;
+    padding: 18px 60px;
+}
+  
+  /* @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  } */
