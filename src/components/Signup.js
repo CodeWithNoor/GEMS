@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Affiliate = () => {
+const Signup = () => {
   return (
     <div>
       
@@ -8,4 +8,5 @@ const Affiliate = () => {
   )
 }
 
-export default Affiliate
+export default Signup
+

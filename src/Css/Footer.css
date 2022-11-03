@@ -47,6 +47,7 @@
     padding-left: 30px;
     padding-right: 30px;
     opacity: 0.5;
+    overflow: hidden;
 }
 
 .Footer__content > .Footer__ThemeAuthor{
@@ -67,4 +68,6 @@
     font-size: 13px;
     padding: 2px 9px;
 }
+
+
 

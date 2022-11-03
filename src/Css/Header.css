@@ -1,13 +1,241 @@
-.header__topBar{
-    padding: 12px 15px;
-    font-size: 11px;
+.header {
+  width: 100%;
+  /* margin-bottom: 5rem; */
 }
 
-.header__navBar{
-    height: 66px;
-    padding: 18px 60px;
+.header__topBar {
+  padding: 12px 15px;
+  font-size: 11px;
+  width: 100%;
+  /* margin-bottom: 10rem; */
 }
-  
+
+.header__navBar {
+  height: 66px;
+  padding: 18px 60px;    
+  margin: 40px 0px;
+  width: 100%;
+  border-top: 5px solid white;
+}
+
+.blackLogo {
+  display: none;
+}
+
+.navBar__left {
+  width: 20%;
+  color: white;
+}
+
+.hamBurgerIcon {
+  width: 20%;
+  cursor: pointer;
+
+}
+
+.navBar__right {
+  font-size: 16px !important;
+  width: 20%;
+}
+#rightIcon{
+  color: white;
+}
+
+.navBar__currency>button {
+  font-size: 12px;
+  border: none;
+}
+
+.navBar__currency>button:active {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.navBar__currency>.dropdown-menu {
+  min-width: 25%;
+}
+
+.navBar__currency>ul>li>button {
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.dropdown-toggle::after {
+  color: white;
+}
+
+.navBar__country>button {
+  font-size: 20px;
+  border: none;
+}
+
+.navBar__currency>button:active {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.navBar__country>.dropdown-menu {
+  min-width: 25%;
+}
+
+.navBar__country>ul>li>button {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+
+.hamburger__Icon {
+  width: 20px;
+  height: 1px;
+  background-color: white;
+  margin: 6px 0;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0%;
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  left: 0;
+  background-color: #00000091;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 150px;
+}
+
+.sidenav a {
+  padding: 25px 0;
+  text-decoration: none;
+  font-size: 15px !important;
+  color: #FFFFFF;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #1fbaff;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 36px !important;
+  margin-left: 6rem;
+  margin-top: 5rem;
+}
+
+.AllProducts {
+  border-bottom: 1px solid white;
+}
+
+.NewArrivals {
+  border-bottom: 1px solid white;
+}
+
+.Contact {
+  border-bottom: 1px solid white;
+}
+
+.sidenav__Support {
+  margin-left: 20px;
+  border-bottom: 1px solid white;
+}
+
+.sidenav__Support>.dropdown-toggle::after {
+  margin-left: 7rem;
+}
+
+@media screen and (max-width: 768px ) {
+  .header{
+    width: 100%;
+  }
+  .header__navBar{
+    width: 100%;
+    padding: 16px 20px;
+  }
+.navBar__left {
+  align-self: center;
+  width: 10%;
+}
+.navBar__center {
+  width: 10%;
+  align-self: center!important;
+}
+.navBar__right {
+  width: 10%;
+  align-self: center;
+}
+.navBar__currency{
+  display: none;
+}
+.navBar__country{
+  display: none;
+}
+.navBar__right .fa-magnifying-glass{
+  display: none;
+}
+.navBar__right .fa-user{
+  display: none;
+}
+  .sidenav {
+    padding-top: 100px;
+    margin-right: 50px!important;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+  .sidenav .container {
+    padding: 0 50px !important;
+  }
+  .sidenav .closebtn {
+    margin-left: 3rem;
+    margin-top: 0rem;
+  }
+}
+
+.accordion {
+  border-bottom: 1px solid white;
+}
+
+.header__navBar .sidenav .accordion-item {
+  background-color: #000000 !important;
+  border: none !important;
+}
+
+.accordion-button {
+  font-size: 15px;
+  padding: 25px 0 !important;
+  box-shadow: none !important;
+}
+
+.accordion-button::after {
+  color: #FFFFFF !important;
+}
+
+.accordion-button:hover {
+  color: #1fbaff !important;
+}
+
+.accordion-body {
+  padding: 0rem 5rem;
+}
+
+.bottomBtn{
+  border: none;
+}
+.searchBar{    
+  margin-top: -180px;
+  padding: 20px 0px 10px 0px;
+  display: none;
+}
+.searchBar .form-control{
+  padding: 3rem 5rem;
+  padding-top: 6rem;
+  width: 100%;
+}
+
   /* @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
