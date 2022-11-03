@@ -1,58 +1,70 @@
-.footer__newsletter{
-    max-width: 1680px;
-    padding: 0px;
-    margin: 0px;
-}
-
-.card-body{
-    flex-direction: column;
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    padding: 25px 0px;
-    font-size: 16px;
+.site-footer-header{
     background-color: #1b1b1b;
-}
-.card-body > p{
     color: white;
+    width: 100%;
+    padding-top: 15px;
+    /* border: 1px solid red; */
 }
 
-.card-body > div > input{
-    padding: 14px 14px;
-    margin-top: 10px;
-    margin-right: 20px;
-    border: none;
+.site-footer-header > div > i{
+    padding: 10px;
 }
 
-/* ********************************************************************* */
-
-.Footer__container{
-    background-color: black;
-    height: 500px;
-}
-
-.u-h6{
-    font-size: 14px;
-    font-weight: bolder;
-    font-family: 'Montserrat';
-    box-sizing: border-box !important;
-}
-
-.Footer_link_Linklist{
-    list-style: none;
-    margin-top: 20px;
-    padding: 0;
-}
-
-.Linklist__Item > .Link{
-    background-color: #911d1d05; 
+.site-footer-header > div > i:hover{
     color: #808080;
-    display: block;
-    line-height: 1.5;
-    text-align: inherit;
+}
+
+.Footer{
+    background-color: black;
+}
+
+.Footer > .col > .row{
+    height: 300px;
+    width: 100%;
+    margin: 0;
+    /* border: 1px solid red; */
+    padding: 90px;
+    align-content: center;
+    justify-content: space-around;
+}
+.Footer_link_Linklist > .Linklist__Item > a{
     text-decoration: none;
-    padding: 7px 0px;
     font-family: 'Montserrat';
+    color: #808080;
     font-size: 13px;
 }
+.Footer__content{
+    width: 100%;
+    /* border: 1px solid red; */
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    border-top: 1px solid #3e3a39;
+}
+
+.Footer > .col > .footer-brand-container > div >.cell{
+    width: 160px;
+    padding-left: 30px;
+    padding-right: 30px;
+    opacity: 0.5;
+}
+
+.Footer__content > .Footer__ThemeAuthor{
+    font-size: 13px;
+    color: #808080;
+    padding: 2px 9px;
+}
+
+.Footer__content > .Footer__ThemeAuthor > a{
+    text-decoration: none;
+    color: #808080;
+    font-size: 13px;
+}
+
+.Footer__content > div > a{
+    text-decoration: none;
+    color: #808080;
+    font-size: 13px;
+    padding: 2px 9px;
+}
+
