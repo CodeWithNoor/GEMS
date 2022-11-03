@@ -25,12 +25,34 @@
     border: none;
 }
 
-.Footer_link_Linklist{
-    list-style: none;
+/* ********************************************************************* */
+
+.Footer__container{
+    background-color: black;
+    height: 500px;
 }
 
-.Linklist__Item > a{
+.u-h6{
+    font-size: 14px;
+    font-weight: bolder;
+    font-family: 'Montserrat';
+    box-sizing: border-box !important;
+}
+
+.Footer_link_Linklist{
+    list-style: none;
+    margin-top: 20px;
+    padding: 0;
+}
+
+.Linklist__Item > .Link{
+    background-color: #911d1d05; 
+    color: #808080;
+    display: block;
+    line-height: 1.5;
+    text-align: inherit;
     text-decoration: none;
-    color: white;
-    padding: 5px 8px;
+    padding: 7px 0px;
+    font-family: 'Montserrat';
+    font-size: 13px;
 }
