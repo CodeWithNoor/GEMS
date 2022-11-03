@@ -1,18 +1,22 @@
+
 .header {
   width: 100%;
+  /* margin-bottom: 5rem; */
 }
 
 .header__topBar {
   padding: 12px 15px;
   font-size: 11px;
   width: 100%;
+  /* margin-bottom: 10rem; */
 }
 
 .header__navBar {
   height: 66px;
-  padding: 18px 60px;
-  background: #ffffff;
+  padding: 18px 60px;    
+  margin: 40px 0px;
   width: 100%;
+  border-top: 5px solid white;
 }
 
 .blackLogo {
@@ -20,19 +24,22 @@
 }
 
 .navBar__left {
-  width: 14%;
+  width: 20%;
   color: white;
 }
 
 .hamBurgerIcon {
-  width: 15%;
+  width: 20%;
   cursor: pointer;
 
 }
 
 .navBar__right {
   font-size: 16px !important;
-  width: 14%;
+  width: 20%;
+}
+#rightIcon{
+  color: white;
 }
 
 .navBar__currency>button {
@@ -55,7 +62,7 @@
 }
 
 .dropdown-toggle::after {
-  color: #000000;
+  color: white;
 }
 
 .navBar__country>button {
@@ -89,13 +96,13 @@
   height: 100%;
   width: 0%;
   position: fixed;
-  z-index: 1;
+  z-index: 2000;
   top: 0;
   left: 0;
   background-color: #00000091;
   overflow-x: hidden;
   transition: 0.5s;
-  padding-top: 170px;
+  padding-top: 150px;
 }
 
 .sidenav a {
@@ -117,6 +124,7 @@
   left: 0;
   font-size: 36px !important;
   margin-left: 6rem;
+  margin-top: 5rem;
 }
 
 .AllProducts {
@@ -149,14 +157,16 @@
     padding: 16px 20px;
   }
 .navBar__left {
+  align-self: center;
   width: 10%;
 }
 .navBar__center {
   width: 10%;
-  align-self: center;
+  align-self: center!important;
 }
 .navBar__right {
   width: 10%;
+  align-self: center;
 }
 .navBar__currency{
   display: none;
@@ -182,6 +192,7 @@
   }
   .sidenav .closebtn {
     margin-left: 3rem;
+    margin-top: 0rem;
   }
 }
 
@@ -212,3 +223,16 @@
   padding: 0rem 5rem;
 }
 
+.bottomBtn{
+  border: none;
+}
+.searchBar{    
+  margin-top: -180px;
+  padding: 20px 0px 10px 0px;
+  display: none;
+}
+.searchBar .form-control{
+  padding: 3rem 5rem;
+  padding-top: 6rem;
+  width: 100%;
+}
