@@ -51,7 +51,7 @@ export default function App() {
                   color: 'white',
                   border: '1px solid white',
                 }}>
-                  Subscribe
+                    Subscribe
                 </button>
               </div>
             </div>
