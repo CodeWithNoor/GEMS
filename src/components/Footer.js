@@ -1,9 +1,8 @@
-<<<<<<< HEAD
 import React from 'react';
-import img1 from '../images/1.webp'
-import img2 from '../images/2.webp'
-import img3 from '../images/3.webp'
-import img4 from '../images/4.webp'
+import img1 from '../images/1.jpg'
+import img2 from '../images/2.jpg'
+import img3 from '../images/3.jpg'
+import img4 from '../images/4.jpg'
 import '../Css/Footer.css'
 
 export default function App() {
@@ -51,7 +50,7 @@ export default function App() {
                   color: 'white',
                   border: '1px solid white',
                 }}>
-                    Subscribe
+                  Subscribe
                 </button>
               </div>
             </div>
