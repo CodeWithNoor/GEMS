@@ -15,9 +15,11 @@ import Login from './components/Login';
 import Signup from './components/Signup';
 import User from './components/User';
 import Footer from './components/Footer';
+import React from 'react';
+
 function App() {
   return (
-    <>
+   
       <BrowserRouter>
         <Header />
         <Routes>
@@ -37,7 +39,7 @@ function App() {
         </Routes>
         <Footer />
       </BrowserRouter>
-    </>
+
   );
 }
 

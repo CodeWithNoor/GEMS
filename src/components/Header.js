@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from 'react-router-dom';
-import "https://kit.fontawesome.com/b3b18b68d1.js";
+// import "https://kit.fontawesome.com/8097bd4879.js";
 import "../Css/Header.css";
 const Header = () => {
 
