@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from 'react';
 import img1 from '../images/1.webp'
 import img2 from '../images/2.webp'
@@ -152,3 +153,13 @@ export default function App() {
     </div>
   );
 }
+=======
+import React from "react";
+
+const Footer = () => {
+  return <div>footer</div>;
+};
+
+export default Footer;
+footer;
+>>>>>>> new_branch
