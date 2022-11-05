@@ -1,73 +1,71 @@
-.site-footer-header{
-    background-color: #1b1b1b;
-    color: white;
-    width: 100%;
-    padding-top: 15px;
-    /* border: 1px solid red; */
+.site-footer-header {
+  background-color: #1b1b1b;
+  color: white;
+  width: 100%;
+  padding-top: 15px;
+  /* border: 1px solid red; */
 }
 
-.site-footer-header > div > i{
-    padding: 10px;
+.site-footer-header > div > i {
+  padding: 10px;
 }
 
-.site-footer-header > div > i:hover{
-    color: #808080;
+.site-footer-header > div > i:hover {
+  color: #808080;
 }
 
-.Footer{
-    background-color: black;
+.Footer {
+  background-color: black;
 }
 
-.Footer > .col > .row{
-    height: 300px;
-    width: 100%;
-    margin: 0;
-    /* border: 1px solid red; */
-    padding: 90px;
-    align-content: center;
-    justify-content: space-around;
+.Footer > .col > .row {
+  height: 300px;
+  width: 100%;
+  margin: 0;
+  /* border: 1px solid red; */
+  padding: 90px;
+  align-content: center;
+  justify-content: space-around;
 }
-.Footer_link_Linklist > .Linklist__Item > a{
-    text-decoration: none;
-    font-family: 'Montserrat';
-    color: #808080;
-    font-size: 13px;
+.Footer_link_Linklist > .Linklist__Item > a {
+  text-decoration: none;
+  font-family: "Montserrat";
+  color: #808080;
+  font-size: 13px;
 }
-.Footer__content{
-    width: 100%;
-    /* border: 1px solid red; */
-    justify-content: center;
-    align-items: center;
-    padding-top: 40px;
-    border-top: 1px solid #3e3a39;
-}
-
-.Footer > .col > .footer-brand-container > div >.cell{
-    width: 160px;
-    padding-left: 30px;
-    padding-right: 30px;
-    opacity: 0.5;
-    overflow: hidden;
+.Footer__content {
+  width: 100%;
+  /* border: 1px solid red; */
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+  border-top: 1px solid #3e3a39;
 }
 
-.Footer__content > .Footer__ThemeAuthor{
-    font-size: 13px;
-    color: #808080;
-    padding: 2px 9px;
+.Footer > .col > .footer-brand-container > div > .cell {
+  width: 160px;
+  padding-left: 30px;
+  padding-right: 30px;
+  opacity: 0.5;
+  /* overflow: hidden; */
 }
 
-.Footer__content > .Footer__ThemeAuthor > a{
-    text-decoration: none;
-    color: #808080;
-    font-size: 13px;
+.Footer__content > .Footer__ThemeAuthor {
+  font-size: 13px;
+  color: #808080;
+  padding: 2px 9px;
 }
 
-.Footer__content > div > a{
-    text-decoration: none;
-    color: #808080;
-    font-size: 13px;
-    padding: 2px 9px;
+.Footer__content > .Footer__ThemeAuthor > a {
+  text-decoration: none;
+  color: #808080;
+  font-size: 13px;
 }
 
-
+.Footer__content > div > a {
+  text-decoration: none;
+  color: #808080;
+  font-size: 13px;
+  padding: 2px 9px;
+}
 

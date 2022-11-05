@@ -1,12 +1,13 @@
 import './App.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Header from './components/Header';
+// import Header from './components/Header';
 import Home from './components/Home';
 import AllProducts from './components/AllProducts';
 import NewArrivals from './components/NewArrivals';
 import HelpCenter from './components/HelpCenter';
 import Download from './components/Download';
 import Blog from './components/Blog';
+import Blogs from './components/Blogs';
 import Affiliate from './components/Affiliate';
 import WhereToBuy from './components/WhereToBuy';
 import Cart from './components/Cart';
@@ -14,14 +15,14 @@ import Search from './components/Search';
 import Login from './components/Login';
 import Signup from './components/Signup';
 import User from './components/User';
-import Footer from './components/Footer';
+// import Footer from './components/Footer';
 import React from 'react';
 
 function App() {
   return (
    
       <BrowserRouter>
-        <Header />
+        {/* <Header /> */}
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path="/allproducts" element={<AllProducts />} />
@@ -29,6 +30,7 @@ function App() {
           <Route path="/helpcenter" element={<HelpCenter />} />
           <Route path="/download" element={<Download />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/blogs" element={<Blogs />} />
           <Route path="/affiliate" element={<Affiliate />} />
           <Route path="/wheretobuy" element={<WhereToBuy />} />
           <Route path="/cart" element={<Cart />} />
@@ -37,7 +39,7 @@ function App() {
           <Route path="/signup" element={<Signup />} />
           <Route path="/user" element={<User />} />
         </Routes>
-        <Footer />
+        {/* <Footer /> */}
       </BrowserRouter>
 
   );
