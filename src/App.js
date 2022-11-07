@@ -7,7 +7,6 @@ import NewArrivals from './components/NewArrivals';
 import HelpCenter from './components/HelpCenter';
 import Download from './components/Download';
 import Blog from './components/Blog';
-import Blogs from './components/Blogs';
 import Affiliate from './components/Affiliate';
 import WhereToBuy from './components/WhereToBuy';
 import Cart from './components/Cart';
@@ -30,7 +29,6 @@ function App() {
           <Route path="/helpcenter" element={<HelpCenter />} />
           <Route path="/download" element={<Download />} />
           <Route path="/blog" element={<Blog />} />
-          <Route path="/blogs" element={<Blogs />} />
           <Route path="/affiliate" element={<Affiliate />} />
           <Route path="/wheretobuy" element={<WhereToBuy />} />
           <Route path="/cart" element={<Cart />} />
