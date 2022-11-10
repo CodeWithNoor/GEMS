@@ -66,14 +66,37 @@ font-weight: 600;
   top: -140px;
   left: 30px;
   padding: 15px 30px;
-  background-color: #000000;
+  background: linear-gradient(to left, rgb(0, 0, 0) 50%, rgb(255, 255, 255) 50%) right;
+  background-size: 200%;
+  transition: .3s ease-out;
+
 }
-  
+ 
+.SectionHeader__ButtonWrapper > a:hover{
+  background-position: left;
+  color: rgb(0, 0, 0);
+}
 
 @import url(https://fonts.googleapis.com/css?family=Playfair+Display);
 .Blog__Card{
     margin-top: 10px;
     margin-bottom: 20px;
+    animation: Blog__Card ease-in 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes Blog__Card{
+  0%,
+    50% {
+      transform: translateY(100%);
+    }
+     
+    60%,
+    100% {
+      transform: translateY(0);
+    
+    }
 }
 
 .card-wrapper {
@@ -153,84 +176,107 @@ font-weight: 600;
   color: rgba(0, 0, 0, 0.696);
 }
 
-.ProductItem{
+.ProductItem__container{
   width: 100%;
   height: 100%;
   /* border: 1px solid red; */
-  display: flex;
+  /* display: flex; */
+  flex-direction: row;
   margin-top: 108px;
   align-items: center;
   justify-content: center;
 }
-.ProductItem-8{
-  width: 100%;
+.ProductItem{
+  width: 65%;
+  border: 1px solid rgba(0, 0, 0, 0.112);
+  height: 408px;
 }
 
-.ProductItem-8 > .ShopNow{
-  width: 13%;
+.ShopNow{
+  /* margin-left: 283px; */
+  margin-top: -14px;
+  background-color: white;
+  width: 20%;
   text-align: center;
-  position: absolute;
-  margin-top: 7px;
-  color: #000000;
-  font-size: 21px;
-  font-weight: 600;
-  left: 280px;
-  background: rgb(255, 255, 255);
-  border: 1px solid rgba(255, 0, 0, 0);
+  transform: translate(190%, 10%);
 }
 
-.ProductItem-Horizontal{
-  border: 1px solid rgba(0, 0, 0, 0.131);
-  display: flex;
-  flex: 0 0 auto;
-  margin: 20px;
-  padding: 68px 30px;
-  justify-content: space-around;
-}
-
-.Product__Card{
-  /* margin-left: 50px; */
-  margin-right: 0px;
-}
-
-.Product__Card__Image{
-  width: 130px;
-  height: 130px;
-}
-
-.Product__Card__Image > img{
-  width: 100%;
-  height: 100%;
-  object-position: center;
-  object-fit: cover;
-}
-
-.Product__Info{
-  width: 150px;
-  margin-top: 30px;
-}
-
-.FeatureQuote__container{
-  /* border: 1px solid red; */
-  flex: 0 0 auto;
-  width: 33.33333333%;
+.Product__info{
+  width: 70%;
+  margin: 0px 60px;
+  padding: 3px;
+  color: black;
 }
 
 .ProductItem__Title > a{
-  text-decoration: none;
-  color: #000000;
-  font-family: 'Montserrat';
-  line-height: 1.5;
+  font-size: 13px;
   font-weight: 700;
+  text-decoration: none;
+  color: black
 }
 
 .ProductItem__Price{
-  color: #00000095;
+  font-size: 15px;
+  color: #00000094;
   font-weight: 500;
-  font-size: 20px;
 }
 
-.FeaturedQuote{
+.ProductItem__Price1{
+  font-size: 15px;
+  color: #ffffff94;
+  font-weight: 500;
+}
+
+.Price--compareAt {
+  position: relative;
+  margin-left: 10px;
+  display: inline-block;
+  text-decoration: line-through;
+}
+
+.Price--highlight {
+color: red;
+}
+
+.ProductItem__Image{
+width: 100%;
+}
+
+.slick-arrow{
+background-color: #000000;
+}
+
+.slick-prev {
+  left: -11px;
+  background-color: #000000;
+} 
+
+.slick-next {
+  right: 0px;
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    display: block;
+    transform: translate(0, -50%);
+    background-color: black;
+    cursor: pointer;
+}
+
+
+.product__image{
+  width: 70%;
+  padding: 10px;
+  margin: 30px;
+}
+
+.FeatureQuote{
+  /* border: 1px solid red; */
+  /* flex: 0 0 auto; */
+  width: 33.33%;
+}
+
+.FeaturedQuote__container{
   background-color: #1c1b1b;
   color: white;
   margin: 20px;
@@ -247,3 +293,55 @@ font-weight: 600;
   font-weight: 500;
   color: rgba(255, 255, 255, 0.394);
 }
+
+@media (min-width:768px ) {
+  .ProductItem__container{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+  }
+}
+
+@media (max-width:768px ) {
+  .FeatureQuote{
+    width: 100%;
+    font-size: 13px;
+  }
+}
+
+@media (max-width:768px ) {
+  .ProductItem{
+     width: 100%;
+  }
+}
+
+@media (max-width:768px ) {
+  .col-4{
+     width: 100%;
+  } 
+     .heading {
+      font-size: 20px;
+    }
+    .Blog__Card__Content{
+      max-width: 100%;
+    }
+  }
+
+@media (max-width:768px ) {
+  .SectionHeader__Heading > a{
+    font-size: 11px;
+    position: relative;
+    top: -92px;
+    left: 5px;
+  }
+  .SectionHeader__ButtonWrapper > a{
+    font-size: 12px;
+    position: relative;
+    top: -92px;
+    left: 5px;
+    padding: 8px 17px;
+  }
+}
+
+
+

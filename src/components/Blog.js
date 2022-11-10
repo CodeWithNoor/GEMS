@@ -1,16 +1,27 @@
 import React from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import "../Css/Blog.css";
-// import Pre__Next__Icon from "../images/back-icon.png";
-// import {Link} from 'react-router-dom'
 
 const Blogs = () => {
+
+  const settings = {
+    className: "center",
+    centerMode: true,
+    infinite: true,
+    centerPadding: "60px",
+    slidesToShow: 2,
+    speed: 500,
+  };
   return (
     <div className="blog">
       <div className="container">
+        {/* ****************** Menus****************** */}
         <header className="Page__Header">
           <div className="Section__Header">
             <h4 className="Section__Header__heading text-start text-dark">
-             {/* eslint-disable-next-line  */}
+              {/* eslint-disable-next-line  */}
               News <a href="/blogs/news"></a>
             </h4>
             <div className="Blog__TagList">
@@ -25,12 +36,12 @@ const Blogs = () => {
                   </a>
                 </li>
                 <li className="HorizontalList__Item">
-                  <a href="#ANC" className="Heading Link Text--subdued">
+                  <a href="/blogs/news/tagged/anc" className="Heading Link Text--subdued">
                     ANC
                   </a>
                 </li>
                 <li className="HorizontalList__Item">
-                  <a href="#ANC" className="Heading Link Text--subdued">
+                  <a href="/ANC" className="Heading Link Text--subdued">
                     earbuds
                   </a>
                 </li>
@@ -75,7 +86,7 @@ const Blogs = () => {
           <div className="ArticleList__Featured container">
             <div className="Section__Header">
               <div className="Hero__Section container">
-                <div className="Blog__Hero__Section">
+                <div className="Blog__Hero__Section HeroSection_desktop">
                   <div className="image-wrapper" style={{ height: "400px" }}>
                     <img
                       className="HeroImage"
@@ -84,7 +95,7 @@ const Blogs = () => {
                     />
                   </div>
                   <div className="Section__Header__Article">
-                    <h4 className="SectionHeader__Heading Heading ">
+                    <h4 className="SectionHeader__Heading">
                       <a href="/blogs/news/new-arrival-soundpeats-launches-life-wireless-earbuds-in-the-us">
                         New Arrival | SOUNDPEATS Launches Life Wireless Earbuds
                         in the US
@@ -422,84 +433,188 @@ const Blogs = () => {
       {/* ***************************************************************************************************** */}
 
       <section className="container">
-        <div className="ProductItem container">
-          <div className="ProductItem-8"> <h6 className="ShopNow"> Shop Now </h6>
-            <div className="ProductItem-Horizontal">
-              <div className="Product__Card">
-                <div className="Product__Card__Image">
-                  <img
-                    src="https://cdn.shopify.com/s/files/1/0508/7461/3942/products/Free2classic_35f34fc0-30dc-43ab-9d14-4b2e53b34764_400x.png?v=1658806095"
-                    alt=""
-                  />
+        <div className="ProductItem__container">
+          <div className="ProductItem">
+            <h5 className="ShopNow"> Shop Now </h5>
+            <div className="products">
+              <div>
+                <div>
+                  <Slider {...settings}>
+                    <div className="Product__Item">
+                      <img
+                        src="https://cdn.shopify.com/s/files/1/0508/7461/3942/products/Free2classic_35f34fc0-30dc-43ab-9d14-4b2e53b34764_400x.png?v=1658806095"
+                        alt=""
+                        className="product__image"
+                      />
+                      <div className="Product__info">
+                        <h6 className="ProductItem__Title">
+                          <a href="/products/soundpeats-sonic-wireless-earbuds text-dark">
+                            SOUNDPEATS Sonic True Wireless Earbuds
+                          </a>
+                        </h6>
+                        <div className="ProductItem__PriceList">
+                          <span className="ProductItem__Price">$63.99</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="Product__Item">
+                      <img
+                        src="https://cdn.shopify.com/s/files/1/0508/7461/3942/products/12_a0483a3f-62bd-4ec1-b981-26835553a97f_400x.png?v=1632293892"
+                        alt=""
+                        className="product__image"
+                      />
+                      <div className="Product__info">
+                        <h6 className="ProductItem__Title">
+                          <a href="/products/soundpeats-t3-tws-earbuds">
+                            SOUNDPEATS T3 Active Noise Canceling TWS Earbuds
+                          </a>
+                        </h6>
+                        <div className="ProductItem__PriceList">
+                          <span className="ProductItem__Price" >$55.99</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="Product__Item">
+                      <img
+                        src="https://cdn.shopify.com/s/files/1/0508/7461/3942/products/H1_1_1_adobespark_400x.png?v=1630635189"
+                        alt=""
+                        className="product__image"
+                      />
+                      <div className="Product__info">
+                        <h6 className="ProductItem__Title">
+                          <a href="/products/soundpeats-h1-wireless-earbuds">
+                            SOUNDPEATS H1 Hybrid Dual Driver True Wireless
+                            Earbuds
+                          </a>
+                        </h6>
+                        <div className="ProductItem__PriceList">
+                          <span className="ProductItem__Price Price--highlight">
+                            $89.99
+                          </span>
+                          <span className="ProductItem__Price Price--compareAt">
+                            $119.99
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="Product__Item">
+                      <img
+                        src="https://cdn.shopify.com/s/files/1/0508/7461/3942/products/TFp_1_1_adobespark_edbaa5b5-383f-4bd1-a4ef-0f6b4e7006cf_400x.png?v=1630635175"
+                        alt=""
+                        className="product__image"
+                      />
+                      <div className="Product__info">
+                        <h6 className="ProductItem__Title">
+                          <a href="/products/soundpeats-truefree-plus-wireless-in-ear-sport-earbuds">
+                            SOUNDPEATS TrueFree + True Wireless In-Ear Sports
+                            Earbuds
+                          </a>
+                        </h6>
+                        <div className="ProductItem__PriceList">
+                          <span className="ProductItem__Price">$49.99</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="Product__Item">
+                      <img
+                        src="https://cdn.shopify.com/s/files/1/0508/7461/3942/products/T2_1_1_1__adobespark_400x.png?v=1630635188"
+                        alt=""
+                        className="product__image"
+                      />
+                      <div className="Product__info">
+                        <h6 className="ProductItem__Title">
+                          <a href="/products/soundpeats-t2-wireless-earbuds">
+                            SOUNDPEATS T2 True Wireless Hybrid ANC In-Ear
+                            Earbuds
+                          </a>
+                        </h6>
+                        <div className="ProductItem__PriceList">
+                          <span className="ProductItem__Price">$69.99</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="Product__Item">
+                      <img
+                        src="https://cdn.shopify.com/s/files/1/0508/7461/3942/products/3se_1_1_adobespark_400x.png?v=1630635174"
+                        alt=""
+                        className="product__image"
+                      />
+                      <div className="Product__info">
+                        <h6 className="ProductItem__Title">
+                          <a href="/products/soundpeats-truengine-3-se-wireless-in-ear-hifi-earbuds">
+                            SOUNDPEATS Truengine 3 SE True Wireless In-Ear HiFi
+                            Earbuds
+                          </a>
+                        </h6>
+                        <div className="ProductItem__PriceList">
+                          <span className="ProductItem__Price">$57.99</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="Product__Item">
+                      <img
+                        src="https://cdn.shopify.com/s/files/1/0508/7461/3942/products/Air3deluxe-2_400x.png?v=1658805139"
+                        alt=""
+                        className="product__image"
+                      />
+                      <div className="Product__info">
+                        <h6 className="ProductItem__Title">
+                          <a href="/products/soundpeats-air3-deluxe-wireless-earbuds">
+                            SOUNDPEATS Air3 Deluxe Wireless Earbuds
+                          </a>
+                        </h6>
+                        <div className="ProductItem__PriceList">
+                          <span className="ProductItem__Price">$59.99</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="Product__Item">
+                      <img
+                        src="https://cdn.shopify.com/s/files/1/0508/7461/3942/products/Minipro_200x.png?v=1658806458"
+                        alt=""
+                        className="product__image"
+                      />
+                      <div className="Product__info">
+                        <h6 className="ProductItem__Title">
+                          <a href="/products/soundpeats-mini-pro-wireless-earbuds">
+                            SOUNDPEATS Mini Pro Wireless Earbuds
+                          </a>
+                        </h6>
+                        <div className="ProductItem__PriceList">
+                          <span className="ProductItem__Price Price--highlight">
+                            $69.99
+                          </span>
+                          <span className="ProductItem__Price Price--compareAt">
+                            $79.99
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="Product__Item">
+                      <img
+                        src="https://cdn.shopify.com/s/files/1/0508/7461/3942/products/Sonic_1_1_adobespark-min_400x.png?v=1630636324"
+                        alt=""
+                        className="product__image"
+                      />
+                      <div className="Product__info">
+                        <h6 className="ProductItem__Title">
+                          <a href="/products/soundpeats-sonic-wireless-earbuds">
+                            SOUNDPEATS Sonic True Wireless Earbuds
+                          </a>
+                        </h6>
+                        <div className="ProductItem__PriceList">
+                          <span className="ProductItem__Price">$63.99</span>
+                        </div>
+                      </div>
+                    </div>
+                  </Slider>
                 </div>
-                <div className="Product__Info">
-                  <h6 class="ProductItem__Title Heading">
-                  <a href="/products/soundpeats-free2-classic-wireless-earbuds">SOUNDPEATS Free2 Classic Wireless Earbuds</a>
-                  </h6>
-                  <div class="ProductItem__PriceList">
-                    <span class="ProductItem__Price">$39.99</span>
-                  </div>
-                </div>
               </div>
-            <div className="Product__Card">
-              <div className="Product__Card__Image">
-                <img
-                  src="https://cdn.shopify.com/s/files/1/0508/7461/3942/products/12_a0483a3f-62bd-4ec1-b981-26835553a97f_200x.png?v=1632293892"
-                  alt=""
-                />
-              </div>
-              <div className="Product__Info">
-                <h6 class="ProductItem__Title Heading">
-                  <a href="/products/soundpeats-t3-tws-earbuds">
-                    SOUNDPEATS T3 Active Noise Canceling TWS Earbuds
-                  </a>
-                </h6>
-                <div class="ProductItem__PriceList">
-                  <span class="ProductItem__Price">$55.99</span>
-                </div>
-              </div>
-            </div>
-            <div className="Product__Card">
-              <div className="Product__Card__Image">
-                <img
-                  src="https://cdn.shopify.com/s/files/1/0508/7461/3942/products/12_a0483a3f-62bd-4ec1-b981-26835553a97f_200x.png?v=1632293892"
-                  alt=""
-                />
-              </div>
-              <div className="Product__Info">
-                <h6 class="ProductItem__Title Heading">
-                  <a href="/products/soundpeats-t3-tws-earbuds">
-                    SOUNDPEATS T3 Active Noise Canceling TWS Earbuds
-                  </a>
-                </h6>
-                <div class="ProductItem__PriceList">
-                  <span class="ProductItem__Price">$55.99</span>
-                </div>
-              </div>
-            </div>
-            <div className="Product__Card">
-              <div className="Product__Card__Image">
-                <img
-                  src="https://cdn.shopify.com/s/files/1/0508/7461/3942/products/12_a0483a3f-62bd-4ec1-b981-26835553a97f_200x.png?v=1632293892"
-                  alt=""
-                />
-              </div>
-              <div className="Product__Info">
-                <h6 class="ProductItem__Title Heading">
-                  <a href="/products/soundpeats-t3-tws-earbuds">
-                    SOUNDPEATS T3 Active Noise Canceling TWS Earbuds
-                  </a>
-                </h6>
-                <div class="ProductItem__PriceList">
-                  <span class="ProductItem__Price">$55.99</span>
-                </div>
-              </div>
-            </div>
             </div>
           </div>
-          <div className="FeatureQuote__container">
-            <div class="FeaturedQuote">
-              <div class="FeaturedQuote__Content">
+          <div className="FeatureQuote">
+            <div className="FeaturedQuote__container">
+              <div className="FeaturedQuote__Content">
                 <p>
                   For the price, these H1 wireless earbuds provide unsurpassed
                   clarity and detail in music, movie and game audio, making them
@@ -508,7 +623,7 @@ const Blogs = () => {
                   <br />
                 </p>
               </div>
-              <p class="FeaturedQuote__Author">SCOTT THARLER</p>
+              <p className="FeaturedQuote__Author">SCOTT THARLER</p>
             </div>
           </div>
         </div>
