@@ -5,7 +5,6 @@ import "slick-carousel/slick/slick-theme.css";
 import "../Css/Blog.css";
 
 const Blogs = () => {
-
   const settings = {
     className: "center",
     centerMode: true,
@@ -14,6 +13,7 @@ const Blogs = () => {
     slidesToShow: 2,
     speed: 500,
   };
+
   return (
     <div className="blog">
       <div className="container">
@@ -30,25 +30,28 @@ const Blogs = () => {
                   <a
                     id="news"
                     href="/blogs/news"
-                    className="Heading Link Text--subdued is-active"
+                    className="Heading Link Text__subdued is-active"
                   >
                     All
                   </a>
                 </li>
                 <li className="HorizontalList__Item">
-                  <a href="/blogs/news/tagged/anc" className="Heading Link Text--subdued">
+                  <a
+                    href="/blogs/news/tagged/anc"
+                    className="Heading Link Text__subdued"
+                  >
                     ANC
                   </a>
                 </li>
                 <li className="HorizontalList__Item">
-                  <a href="/ANC" className="Heading Link Text--subdued">
+                  <a href="/ANC" className="Heading Link Text__subdued">
                     earbuds
                   </a>
                 </li>
                 <li className="HorizontalList__Item">
                   <a
                     href="/blogs/news/tagged/new-release"
-                    className="Heading Link Text--subdued"
+                    className="Heading Link Text__subdued"
                   >
                     New Release
                   </a>
@@ -56,7 +59,7 @@ const Blogs = () => {
                 <li className="HorizontalList__Item">
                   <a
                     href="/blogs/news/tagged/news"
-                    className="Heading Link Text--subdued"
+                    className="Heading Link Text__subdued"
                   >
                     News
                   </a>
@@ -64,7 +67,7 @@ const Blogs = () => {
                 <li className="HorizontalList__Item">
                   <a
                     href="/blogs/news/tagged/press-releases"
-                    className="Heading Link Text--subdued"
+                    className="Heading Link Text__subdued"
                   >
                     press releases
                   </a>
@@ -72,7 +75,7 @@ const Blogs = () => {
                 <li className="HorizontalList__Item">
                   <a
                     href="/blogs/news/tagged/wireles"
-                    className="Heading Link Text--subdued"
+                    className="Heading Link Text__subdued"
                   >
                     Wireless
                   </a>
@@ -82,11 +85,12 @@ const Blogs = () => {
           </div>
         </header>
 
-        <section className="container Article__List">
-          <div className="ArticleList__Featured container">
+        {/* *************************************Desktop Responsive********************************************* */}
+        <section className=" Article__List container">
+          <div className="ArticleList__Featured container Desktop">
             <div className="Section__Header">
               <div className="Hero__Section container">
-                <div className="Blog__Hero__Section HeroSection_desktop">
+                <div className="Blog__Hero__Section">
                   <div className="image-wrapper" style={{ height: "400px" }}>
                     <img
                       className="HeroImage"
@@ -115,9 +119,48 @@ const Blogs = () => {
             </div>
           </div>
 
+          {/* *************************************Mobile Responsive********************************************* */}
+          <div className="ArticleList__Featured container Mobile">
+            <div className="Section__Header">
+              <div className="Hero__Section container">
+                <div className="Blog__Hero__Section">
+                  <div className="image-wrapper" style={{ height: "200pxpx" }}>
+                    <img
+                      className="HeroImage"
+                      src="	https://cdn.shopify.com/s/files/1/0508/7461/3942/articles/1_1500x.jpg?v=1664437542"
+                      alt=""
+                    />
+                  </div>
+                  <div className="Section__Header__Article">
+                    <h4 className="SectionHeader__Heading">
+                      <a href="/blogs/news/new-arrival-soundpeats-launches-life-wireless-earbuds-in-the-us">
+                        New Arrival | SOUNDPEATS Launches Life Wireless Earbuds
+                        in the US
+                      </a>
+                    </h4>
+                    <p class="SectionHeader__ArticleItem__Excerpt">
+                      FOR IMMEDIATE RELEASE &nbsp; SOUNDPEATS Launches Life
+                      Wireless Earbuds in the United States&nbsp; &nbsp; Priced
+                      at $29.99, SOUNDPEATS Life&nbsp;offers an ideal budget ...
+                    </p>
+                    <div className="SectionHeader__ButtonWrapper">
+                      <a
+                        href="/blogs/news/new-arrival-soundpeats-launches-life-wireless-earbuds-in-the-us"
+                        className="Button Button--primary"
+                      >
+                        Read more
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* *************************************Product Cards********************************************* */}
           <div className="Blog container m-3">
             <div className="Blog__Card row">
-              <div className="col-4">
+              <div className="ArticleItem__Content">
                 <div className="card-wrapper">
                   <div className="Blog__Card__Content">
                     <div className="image-wrapper">
@@ -152,7 +195,7 @@ const Blogs = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-4">
+              <div className="ArticleItem__Content">
                 <div className="card-wrapper">
                   <div className="Blog__Card__Content">
                     <div className="image-wrapper">
@@ -189,7 +232,7 @@ const Blogs = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-4">
+              <div className="ArticleItem__Content">
                 <div className="card-wrapper">
                   <div className="Blog__Card__Content">
                     <div className="image-wrapper">
@@ -230,7 +273,7 @@ const Blogs = () => {
           </div>
 
           <div className="Blog__Card row container">
-            <div className="col-4">
+            <div className="ArticleItem__Content">
               <div className="card-wrapper">
                 <div className="Blog__Card__Content">
                   <div className="image-wrapper">
@@ -267,7 +310,7 @@ const Blogs = () => {
                 </div>
               </div>
             </div>
-            <div className="col-4">
+            <div className="ArticleItem__Content">
               <div className="card-wrapper">
                 <div className="Blog__Card__Content">
                   <div className="image-wrapper">
@@ -307,7 +350,7 @@ const Blogs = () => {
                 </div>
               </div>
             </div>
-            <div className="col-4">
+            <div className="ArticleItem__Content">
               <div className="card-wrapper">
                 <div className="Blog__Card__Content">
                   <div className="image-wrapper">
@@ -346,7 +389,7 @@ const Blogs = () => {
             </div>
           </div>
           <div className="Blog__Card row container">
-            <div className="col-4">
+            <div className="ArticleItem__Content">
               <div className="card-wrapper">
                 <div className="Blog__Card__Content">
                   <div className="image-wrapper">
@@ -386,7 +429,7 @@ const Blogs = () => {
                 </div>
               </div>
             </div>
-            <div className="col-4">
+            <div className="ArticleItem__Content">
               <div className="card-wrapper">
                 <div className="Blog__Card__Content">
                   <div className="image-wrapper">
@@ -430,10 +473,9 @@ const Blogs = () => {
         </section>
       </div>
 
-      {/* ***************************************************************************************************** */}
-
+      {/* ******************************************Shop Now*********************************************************** */}
       <section className="container">
-        <div className="ProductItem__container">
+        <div className="ProductItem__container container">
           <div className="ProductItem">
             <h5 className="ShopNow"> Shop Now </h5>
             <div className="products">
@@ -470,7 +512,7 @@ const Blogs = () => {
                           </a>
                         </h6>
                         <div className="ProductItem__PriceList">
-                          <span className="ProductItem__Price" >$55.99</span>
+                          <span className="ProductItem__Price">$55.99</span>
                         </div>
                       </div>
                     </div>
@@ -612,8 +654,10 @@ const Blogs = () => {
               </div>
             </div>
           </div>
+
+          {/* *************************************FeatureQuote********************************************* */}
           <div className="FeatureQuote">
-            <div className="FeaturedQuote__container">
+            <div className="FeaturedQuote__Container">
               <div className="FeaturedQuote__Content">
                 <p>
                   For the price, these H1 wireless earbuds provide unsurpassed
