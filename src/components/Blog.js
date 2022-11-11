@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import "../Css/Blog.css";
 
 const Blogs = () => {
+
   const settings = {
     className: "center",
     centerMode: true,
@@ -138,7 +139,7 @@ const Blogs = () => {
                         in the US
                       </a>
                     </h4>
-                    <p class="SectionHeader__ArticleItem__Excerpt">
+                    <p className="SectionHeader__ArticleItem__Excerpt">
                       FOR IMMEDIATE RELEASE &nbsp; SOUNDPEATS Launches Life
                       Wireless Earbuds in the United States&nbsp; &nbsp; Priced
                       at $29.99, SOUNDPEATS Life&nbsp;offers an ideal budget ...

@@ -83,6 +83,7 @@ font-weight: 600;
 .SectionHeader__ButtonWrapper > a:hover{
   background-position: left;
   color: rgb(0, 0, 0);
+  border: 1px solid black;
 }
 
 .Mobile{
@@ -90,13 +91,26 @@ font-weight: 600;
 }
 
 .Blog__Card{
-    margin-top: 10px;
-    margin-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
+
 
 .ArticleItem__Content{
   flex: 0 0 auto;
   width: 33.33333333%;
+  animation: ArticleItem__Content 3s ease-in;
+}
+
+@keyframes ArticleItem__Content {
+  0% {
+    transform: translateY(100px);
+    /* opacity: 0; */
+  }
+  100% {
+    transform: translateY(0);
+    /* opacity: 1; */
+  }
 }
 
 .card-wrapper {
@@ -143,14 +157,14 @@ font-weight: 600;
 
 .heading {
   font-family: 'Montserrat';
-  font-size: 25px;
+  font-size: 23px;
   font-weight: 500;
-  line-height: 1;
+  line-height: 1.4;
 }
 
 .text {
   font-family: 'Montserrat';
-  font-weight: 300;
+  font-weight: 600;
   font-size: 13px;
   padding-top: 10px;
   line-height: 2;
@@ -161,7 +175,7 @@ font-weight: 600;
   margin-left: 10px;
   font-family: 'Montserrat';
   font-size: 15px;
-  font-weight: 500;
+  font-weight: 700;
   color: #000000;
 }
 
@@ -186,6 +200,10 @@ font-weight: 600;
   height: 408px;
 }
 
+.ProductItem__Image{
+width: 100%;
+}
+
 .ShopNow{
   /* margin-left: 283px; */
   margin-top: -14px;
@@ -193,6 +211,12 @@ font-weight: 600;
   width: 20%;
   text-align: center;
   transform: translate(190%, 10%);
+}
+
+.product__image{
+  width: 70%;
+  padding: 10px;
+  margin: 30px;
 }
 
 .Product__info{
@@ -211,7 +235,13 @@ font-weight: 600;
 
 .ProductItem__Price{
   font-size: 15px;
-  color: #00000094;
+  color: #00000002;
+  font-weight: 500;
+}
+
+.ProductItem__Price:hover{
+  font-size: 15px;
+  color: #0000009b;
   font-weight: 500;
 }
 
@@ -223,12 +253,13 @@ font-weight: 600;
 }
 
 .Price--highlight {
+color: rgb(255, 255, 255);
+}
+
+.Price--highlight:hover {
 color: red;
 }
 
-.ProductItem__Image{
-width: 100%;
-}
 
 .slick-prev {
   left: -25px;
@@ -248,11 +279,7 @@ width: 100%;
   color: rgba(0, 0, 0, 0.266)
 }
 
-.product__image{
-  width: 70%;
-  padding: 10px;
-  margin: 30px;
-}
+
 
 .FeatureQuote{
   /* border: 1px solid red; */
