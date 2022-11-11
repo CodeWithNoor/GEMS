@@ -276,7 +276,7 @@ color: red;
 
 .slick-prev:before, .slick-next:before {
   font-size: 39px;
-  color: rgba(0, 0, 0, 0.266)
+  color: rgba(0, 0, 0, 0.078);
 }
 
 
