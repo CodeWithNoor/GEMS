@@ -99,17 +99,15 @@ font-weight: 600;
 .ArticleItem__Content{
   flex: 0 0 auto;
   width: 33.33333333%;
-  animation: ArticleItem__Content 3s ease-in;
+  animation: ArticleItem__Content 2s ease-in;
 }
 
 @keyframes ArticleItem__Content {
   0% {
     transform: translateY(100px);
-    /* opacity: 0; */
   }
   100% {
     transform: translateY(0);
-    /* opacity: 1; */
   }
 }
 
@@ -376,6 +374,7 @@ margin-bottom: 60px;
 @media (max-width:768px ) {
   .ProductItem{
      width: 100%;
+    height: 350px;
   }
 
   .ProductItem > .ShopNow{
@@ -384,12 +383,18 @@ margin-bottom: 60px;
   }
 
 .ProductItem__Title > a{
-  font-size: 10px;
+  font-size: 8px;
 }
 
 .ProductItem__Price{
-  font-size: 10px;
+  font-size: 8px;
+  color: rgba(0, 0, 0, 0.341);
 }
+
+.Price--highlight{
+  color: red;
+}
+
 }
 
 @media (max-width:768px ) {

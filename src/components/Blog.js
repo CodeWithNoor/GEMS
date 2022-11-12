@@ -159,8 +159,8 @@ const Blogs = () => {
           </div>
 
           {/* *************************************Product Cards********************************************* */}
-          <div className="Blog container m-3">
-            <div className="Blog__Card row">
+          <div className="Blog container">
+            <div className="Blog__Card row container">
               <div className="ArticleItem__Content">
                 <div className="card-wrapper">
                   <div className="Blog__Card__Content">
@@ -271,7 +271,6 @@ const Blogs = () => {
                 </div>
               </div>
             </div>
-          </div>
 
           <div className="Blog__Card row container">
             <div className="ArticleItem__Content">
@@ -471,9 +470,9 @@ const Blogs = () => {
               </div>
             </div>
           </div>
+          </div>
         </section>
       </div>
-
       {/* ******************************************Shop Now*********************************************************** */}
       <section className="container">
         <div className="ProductItem__container container">
@@ -484,11 +483,13 @@ const Blogs = () => {
                 <div>
                   <Slider {...settings}>
                     <div className="Product__Item">
+                      <div className="product-image1">
                       <img
+                        className="product__image"
                         src="https://cdn.shopify.com/s/files/1/0508/7461/3942/products/Free2classic_35f34fc0-30dc-43ab-9d14-4b2e53b34764_400x.png?v=1658806095"
                         alt=""
-                        className="product__image"
                       />
+                      </div>
                       <div className="Product__info">
                         <h6 className="ProductItem__Title">
                           <a href="/products/soundpeats-sonic-wireless-earbuds text-dark">
@@ -502,9 +503,9 @@ const Blogs = () => {
                     </div>
                     <div className="Product__Item">
                       <img
+                        className="product__image"
                         src="https://cdn.shopify.com/s/files/1/0508/7461/3942/products/12_a0483a3f-62bd-4ec1-b981-26835553a97f_400x.png?v=1632293892"
                         alt=""
-                        className="product__image"
                       />
                       <div className="Product__info">
                         <h6 className="ProductItem__Title">
@@ -519,9 +520,9 @@ const Blogs = () => {
                     </div>
                     <div className="Product__Item">
                       <img
+                        className="product__image"
                         src="https://cdn.shopify.com/s/files/1/0508/7461/3942/products/H1_1_1_adobespark_400x.png?v=1630635189"
                         alt=""
-                        className="product__image"
                       />
                       <div className="Product__info">
                         <h6 className="ProductItem__Title">
@@ -542,9 +543,9 @@ const Blogs = () => {
                     </div>
                     <div className="Product__Item">
                       <img
+                        className="product__image"
                         src="https://cdn.shopify.com/s/files/1/0508/7461/3942/products/TFp_1_1_adobespark_edbaa5b5-383f-4bd1-a4ef-0f6b4e7006cf_400x.png?v=1630635175"
                         alt=""
-                        className="product__image"
                       />
                       <div className="Product__info">
                         <h6 className="ProductItem__Title">
@@ -560,9 +561,9 @@ const Blogs = () => {
                     </div>
                     <div className="Product__Item">
                       <img
+                        className="product__image"
                         src="https://cdn.shopify.com/s/files/1/0508/7461/3942/products/T2_1_1_1__adobespark_400x.png?v=1630635188"
                         alt=""
-                        className="product__image"
                       />
                       <div className="Product__info">
                         <h6 className="ProductItem__Title">
@@ -578,9 +579,9 @@ const Blogs = () => {
                     </div>
                     <div className="Product__Item">
                       <img
+                        className="product__image"
                         src="https://cdn.shopify.com/s/files/1/0508/7461/3942/products/3se_1_1_adobespark_400x.png?v=1630635174"
                         alt=""
-                        className="product__image"
                       />
                       <div className="Product__info">
                         <h6 className="ProductItem__Title">
@@ -596,9 +597,9 @@ const Blogs = () => {
                     </div>
                     <div className="Product__Item">
                       <img
+                        className="product__image"
                         src="https://cdn.shopify.com/s/files/1/0508/7461/3942/products/Air3deluxe-2_400x.png?v=1658805139"
                         alt=""
-                        className="product__image"
                       />
                       <div className="Product__info">
                         <h6 className="ProductItem__Title">
@@ -613,9 +614,9 @@ const Blogs = () => {
                     </div>
                     <div className="Product__Item">
                       <img
+                        className="product__image"
                         src="https://cdn.shopify.com/s/files/1/0508/7461/3942/products/Minipro_200x.png?v=1658806458"
                         alt=""
-                        className="product__image"
                       />
                       <div className="Product__info">
                         <h6 className="ProductItem__Title">
@@ -635,9 +636,9 @@ const Blogs = () => {
                     </div>
                     <div className="Product__Item">
                       <img
+                        className="product__image"
                         src="https://cdn.shopify.com/s/files/1/0508/7461/3942/products/Sonic_1_1_adobespark-min_400x.png?v=1630636324"
                         alt=""
-                        className="product__image"
                       />
                       <div className="Product__info">
                         <h6 className="ProductItem__Title">
