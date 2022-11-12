@@ -3,9 +3,9 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../Css/Blog.css";
+import Product from "./Product";
 
 const Blogs = () => {
-
   const settings = {
     className: "center",
     centerMode: true,
@@ -88,7 +88,7 @@ const Blogs = () => {
 
         {/* *************************************Desktop Responsive********************************************* */}
         <section className=" Article__List container">
-          <div className="ArticleList__Featured container Desktop">
+          <div className="ArticleList__Featured Desktop">
             <div className="Section__Header">
               <div className="Hero__Section container">
                 <div className="Blog__Hero__Section">
@@ -121,7 +121,7 @@ const Blogs = () => {
           </div>
 
           {/* *************************************Mobile Responsive********************************************* */}
-          <div className="ArticleList__Featured container Mobile">
+          <div className="ArticleList__Featured Mobile">
             <div className="Section__Header">
               <div className="Hero__Section container">
                 <div className="Blog__Hero__Section">
@@ -160,316 +160,61 @@ const Blogs = () => {
 
           {/* *************************************Product Cards********************************************* */}
           <div className="Blog container">
-            <div className="Blog__Card row container">
-              <div className="ArticleItem__Content">
-                <div className="card-wrapper">
-                  <div className="Blog__Card__Content">
-                    <div className="image-wrapper">
-                      <a className="image-link" href="/">
-                        <img
-                          className="Card__Image"
-                          src="https://cdn.shopify.com/s/files/1/0508/7461/3942/articles/Halloween_Party_Flyer_A4_600x.jpg?v=1666003195"
-                          alt=""
-                        />
-                      </a>
-                    </div>
-                    <div className="text-box-wrapper">
-                      <div className="text-box">
-                        <p className="ArticleList text">News</p>
-                        <h1 className="heading my-3" id="news">
-                          Halloween Giveaway | Win Newest LIFE Wireless Earbuds
-                        </h1>
-
-                        <p className="text">
-                          Thought it was a hoot and a half? We have other
-                          channels for more giveaways to Oct,31! Go again for
-                          more chances: Facebook Instgram Twittwer ...
-                        </p>
-                      </div>
-                    </div>
-
-                    <div className="button-wrapper">
-                      <a className="button" href="/">
-                        Read More
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="ArticleItem__Content">
-                <div className="card-wrapper">
-                  <div className="Blog__Card__Content">
-                    <div className="image-wrapper">
-                      <a
-                        className="image-link"
-                        href="/blogs/news/review-soundpeats-air3-deluxe"
-                      >
-                        <img
-                          className="Card__Image"
-                          src="https://cdn.shopify.com/s/files/1/0508/7461/3942/articles/IMG_5031_800x.jpg?v=1665328678"
-                          alt=""
-                        />
-                      </a>
-                    </div>
-                    <div className="text-box-wrapper">
-                      <div className="text-box">
-                        <h1 className="heading my-3">
-                          Review | SOUNDPEATS Air3 Deluxe
-                        </h1>
-
-                        <p className="text">
-                          Google "wireless earbuds", you will find thousands of
-                          models from hundreds of manufacturers. The truth is
-                          that there’s an excess of earbuds the...
-                        </p>
-                      </div>
-                    </div>
-
-                    <div className="button-wrapper">
-                      <a className="button" href="/">
-                        Read More
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="ArticleItem__Content">
-                <div className="card-wrapper">
-                  <div className="Blog__Card__Content">
-                    <div className="image-wrapper">
-                      <a
-                        className="image-link"
-                        href="/blogs/news/soundpeats-bluetooth-true-wireless-earbuds-article-review-june-2022"
-                      >
-                        <img
-                          className="Card__Image"
-                          src="https://cdn.shopify.com/s/files/1/0508/7461/3942/articles/mini_pro_b6a881b9-4235-450d-ac8e-2acbdda12e2d_600x.jpg?v=1662006074"
-                          alt=""
-                        />
-                      </a>
-                    </div>
-                    <div className="text-box-wrapper">
-                      <div className="text-box">
-                        <h1 className="heading my-3">
-                          Review | SOUNDPEATS Mini Pro
-                        </h1>
-
-                        <p className="text">
-                          SOUNDPEATS advocates smart technology and is committed
-                          to integrating music into daily life. They want to
-                          create scientific and innovative True Wir...
-                        </p>
-                      </div>
-                    </div>
-
-                    <div className="button-wrapper">
-                      <a className="button" href="/">
-                        Read More
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div className="Blog__row row">
+              <Product
+                title="News"
+                image="https://cdn.shopify.com/s/files/1/0508/7461/3942/articles/Halloween_Party_Flyer_A4_600x.jpg?v=1666003195"
+                heading="Halloween Giveaway | Win Newest LIFE Wireless Earbuds"
+                description=" Thought it was a hoot and a half? We have other channels for more giveaways to Oct,31! Go again for more chances: Facebook Instgram Twittwer ..."
+              />
+              <Product
+                image="https://cdn.shopify.com/s/files/1/0508/7461/3942/articles/IMG_5031_800x.jpg?v=1665328678"
+                heading="Review | SOUNDPEATS Air3 Deluxe"
+                description=' Google "wireless earbuds", you will find thousands of models from hundreds of manufacturers. The truth is that there’s an excess of earbuds the...'
+              />
+              <Product
+                image="https://cdn.shopify.com/s/files/1/0508/7461/3942/articles/mini_pro_b6a881b9-4235-450d-ac8e-2acbdda12e2d_600x.jpg?v=1662006074"
+                heading="Review | SOUNDPEATS Mini Pro"
+                description="SOUNDPEATS advocates smart technology and is committed to integrating music into daily life. They want to create scientific and innovative True Wir..."
+              />
             </div>
 
-          <div className="Blog__Card row container">
-            <div className="ArticleItem__Content">
-              <div className="card-wrapper">
-                <div className="Blog__Card__Content">
-                  <div className="image-wrapper">
-                    <a
-                      className="image-link"
-                      href="/blogs/news/soundpeats-air-3-pro-review"
-                    >
-                      <img
-                        className="Card__Image"
-                        src="https://cdn.shopify.com/s/files/1/0508/7461/3942/articles/Untitled_design_1_800x.png?v=1661425882"
-                        alt=" Review | SOUNDPEATS Air3 Pro"
-                      />
-                    </a>
-                  </div>
-                  <div className="text-box-wrapper">
-                    <div className="text-box">
-                      <h1 className="heading my-3">
-                        Review | SOUNDPEATS Air3 Pro
-                      </h1>
+            <div className="Blog__row row">
+              <Product
+                image="https://cdn.shopify.com/s/files/1/0508/7461/3942/articles/Untitled_design_1_800x.png?v=1661425882"
+                heading="Review | SOUNDPEATS Air3 Pro"
+                description='  "Great Value" "Highly Recommmend" "Awesome"… There are rave reviews on SOUNDPEATS Air3 Pro since these true wireless earbuds was launche...'
+              />
 
-                      <p className="text">
-                        "Great Value" "Highly Recommmend" "Awesome"… There are
-                        rave reviews on SOUNDPEATS Air3 Pro since these true
-                        wireless earbuds was launche...
-                      </p>
-                    </div>
-                  </div>
+              <Product
+                title="ANC"
+                image="https://cdn.shopify.com/s/files/1/0508/7461/3942/articles/4_600x.jpg?v=1655365834"
+                heading="SOUNDPEATS Air3 Pro - Pre-launch l $39.99"
+                description=" SOUNDPEATS Hybrid ANC Air3 Pro will be launched on 28th June in the US Amazon. There will be a limited-time online deal price of $39.99 on a first..."
+              />
 
-                  <div className="button-wrapper">
-                    <a className="button" href="/">
-                      Read More
-                    </a>
-                  </div>
-                </div>
-              </div>
+              <Product
+                image="https://cdn.shopify.com/s/files/1/0508/7461/3942/articles/1_16_800x.jpg?v=1654156012"
+                heading="SOUNDPEATS Free2 Classic Video Review - June 2022"
+                description=" SOUNDPEATS Free2 Classic has Long battery life, Innovative exterior design, 6mm bio-diaphragm speaker, Touch control with deal price."
+              />
             </div>
-            <div className="ArticleItem__Content">
-              <div className="card-wrapper">
-                <div className="Blog__Card__Content">
-                  <div className="image-wrapper">
-                    <a
-                      className="image-link"
-                      id="ANC"
-                      href="/blogs/news/soundpeats-air3pro"
-                      target="_blank"
-                    >
-                      <img
-                        className="Card__Image"
-                        src="https://cdn.shopify.com/s/files/1/0508/7461/3942/articles/4_600x.jpg?v=1655365834"
-                        alt="SOUNDPEATS Air3 Pro - Pre-launch l $39.99"
-                      />
-                    </a>
-                  </div>
-                  <div className="text-box-wrapper">
-                    <div className="text-box">
-                      <p className="ArticleList text">ANC</p>
-                      <h1 className="heading my-3">
-                        SOUNDPEATS Air3 Pro - Pre-launch l $39.99
-                      </h1>
 
-                      <p className="text">
-                        SOUNDPEATS Hybrid ANC Air3 Pro will be launched on 28th
-                        June in the US Amazon. There will be a limited-time
-                        online deal price of $39.99 on a first...
-                      </p>
-                    </div>
-                  </div>
+            <div className="Blog__row row">
+              <Product
+                image="https://cdn.shopify.com/s/files/1/0508/7461/3942/articles/3_800x.jpg?v=1630296836"
+                title="press releases"
+                heading=" New Arrival | SOUNDPEATS Launches Air3 Wireless Earbuds in the US"
+                description="Priced at $49.99, SOUNDPEATS Air3 offers superior sound quality at a reasonable price. SOUNDPEATS’ new Air3 earbuds feature a 14.2 mm dynamic drive..."
+              />
 
-                  <div className="button-wrapper">
-                    <a className="button" href="/">
-                      Read More
-                    </a>
-                  </div>
-                </div>
-              </div>
+              <Product
+                image="https://cdn.shopify.com/s/files/1/0508/7461/3942/articles/KTA2754_800x.jpg?v=1630057268"
+                title="press releases"
+                heading=" SOUNDPEATS Introduces New H1 True Wireless Earbuds in the United States"
+                description="SOUNDPEATS, a global headphone producer and an Amazon bestseller in the headphone category, announced today that it launched its H1 True Wireless E..."
+              />
             </div>
-            <div className="ArticleItem__Content">
-              <div className="card-wrapper">
-                <div className="Blog__Card__Content">
-                  <div className="image-wrapper">
-                    <a
-                      className="image-link"
-                      href="/blogs/news/soundpeats-free2-classic-video-review-june-2022"
-                    >
-                      <img
-                        className="Card__Image"
-                        src="https://cdn.shopify.com/s/files/1/0508/7461/3942/articles/1_16_800x.jpg?v=1654156012"
-                        alt="SOUNDPEATS Free2 Classic Video Review - June 2022"
-                      />
-                    </a>
-                  </div>
-                  <div className="text-box-wrapper">
-                    <div className="text-box">
-                      <h1 className="heading my-3">
-                        SOUNDPEATS Free2 Classic Video Review - June 2022
-                      </h1>
-
-                      <p className="text">
-                        SOUNDPEATS Free2 Classic has Long battery life,
-                        Innovative exterior design, 6mm bio-diaphragm speaker,
-                        Touch control with deal price.
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="button-wrapper">
-                    <a className="button" href="/">
-                      Read More
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="Blog__Card row container">
-            <div className="ArticleItem__Content">
-              <div className="card-wrapper">
-                <div className="Blog__Card__Content">
-                  <div className="image-wrapper">
-                    <a
-                      className="image-link"
-                      id="press releases"
-                      href="/blogs/news/air3-release"
-                    >
-                      <img
-                        className="Card__Image"
-                        src="https://cdn.shopify.com/s/files/1/0508/7461/3942/articles/3_800x.jpg?v=1630296836"
-                        alt="New Arrival | SOUNDPEATS Launches Air3 Wireless Earbuds in the US"
-                      />
-                    </a>
-                  </div>
-                  <div className="text-box-wrapper">
-                    <div className="text-box">
-                      <p className="ArticleList text">press releases</p>
-                      <h1 className="heading my-3">
-                        New Arrival | SOUNDPEATS Launches Air3 Wireless Earbuds
-                        in the US
-                      </h1>
-
-                      <p className="text">
-                        Priced at $49.99, SOUNDPEATS Air3 offers superior sound
-                        quality at a reasonable price. SOUNDPEATS’ new Air3
-                        earbuds feature a 14.2 mm dynamic drive...
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="button-wrapper">
-                    <a className="button" href="/">
-                      Read More
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="ArticleItem__Content">
-              <div className="card-wrapper">
-                <div className="Blog__Card__Content">
-                  <div className="image-wrapper">
-                    <a
-                      className="image-link"
-                      id="press releases"
-                      href="/blogs/news/the-future-of-tech-is-here"
-                    >
-                      <img
-                        className="Card__Image"
-                        src="https://cdn.shopify.com/s/files/1/0508/7461/3942/articles/KTA2754_800x.jpg?v=1630057268"
-                        alt="SOUNDPEATS Introduces New H1 True Wireless Earbuds in the United States"
-                      />
-                    </a>
-                  </div>
-                  <div className="text-box-wrapper">
-                    <div className="text-box">
-                      <p className="ArticleList text">press releases</p>
-                      <h1 className="heading my-3">
-                        SOUNDPEATS Introduces New H1 True Wireless Earbuds in
-                        the United States
-                      </h1>
-
-                      <p className="text">
-                        SOUNDPEATS, a global headphone producer and an Amazon
-                        bestseller in the headphone category, announced today
-                        that it launched its H1 True Wireless E...
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="button-wrapper">
-                    <a className="button" href="/">
-                      Read More
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
           </div>
         </section>
       </div>
@@ -484,11 +229,11 @@ const Blogs = () => {
                   <Slider {...settings}>
                     <div className="Product__Item">
                       <div className="product-image1">
-                      <img
-                        className="product__image"
-                        src="https://cdn.shopify.com/s/files/1/0508/7461/3942/products/Free2classic_35f34fc0-30dc-43ab-9d14-4b2e53b34764_400x.png?v=1658806095"
-                        alt=""
-                      />
+                        <img
+                          className="product__image"
+                          src="https://cdn.shopify.com/s/files/1/0508/7461/3942/products/Free2classic_35f34fc0-30dc-43ab-9d14-4b2e53b34764_400x.png?v=1658806095"
+                          alt=""
+                        />
                       </div>
                       <div className="Product__info">
                         <h6 className="ProductItem__Title">
