@@ -1,12 +1,26 @@
-import React from 'react'
-import '../Css/Product.css'
+import React from "react";
+import "../Css/Product.css";
 
-const Product = () => {
+const Product = ({Image, Title, Price, actual__Price }) => {
   return (
-    <div>
-      
-    </div>
-  )
-}
+    <>
+    <div className="product">
+      <div className="product__item">
+        <img className="product__image" src={Image} alt="" />
+      </div>
 
-export default Product
+      <div className="product__info">
+        <h6 className="productItem__Title">{Title}</h6>
+      </div>
+      <div className="ProductItem__PriceList">
+        <span className="ProductItem__Price">{Price}</span>
+        <span className="ProductItem__Price Price--compareAt">
+          {actual__Price}
+        </span>
+      </div>
+    </div>  
+    </>
+  );
+};
+
+export default Product;

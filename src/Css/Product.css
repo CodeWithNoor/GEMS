@@ -1,0 +1,60 @@
+.ProductItem__container {
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .product{
+    margin: 10px;
+    padding: 10px;
+  }
+  .ProductItem {
+    width: 63%;
+    border: 1px solid rgba(0, 0, 0, 0.112);
+    height: 425px;
+  }
+  
+  .ProductItem__Image {
+    width: 100%;
+  }
+  
+  .ShopNow {
+    margin-top: -14px;
+    background-color: white;
+    width: 20%;
+    text-align: center;
+    transform: translate(190%, 10%);
+  }
+  
+  .product__image {
+    width: 75%;
+    padding: 10px;
+    margin: 10px;
+  }
+  
+  .ProductItem__Price {
+    font-size: 15px;
+    color: #cd151502;
+    font-weight: 500;
+  }
+  
+  .ProductItem__Price:hover {
+    font-size: 15px;
+    color: #0707079b;
+    font-weight: 500;
+  }
+  
+  .Price--compareAt {
+    position: relative;
+    margin-left: 10px;
+    display: inline-block;
+    text-decoration: line-through;
+  }
+  
+  .Price--compareAt:hover {
+    color: red;
+  }
+  

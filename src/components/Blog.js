@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../Css/Blog.css";
 import Blog__Cards from "./BlogCard";
+import Product from "./Product";
 
 const Blogs = () => {
   const settings = {
@@ -227,175 +228,82 @@ const Blogs = () => {
               <div>
                 <div>
                   <Slider {...settings}>
-                    <div className="Product__Item">
-                      <div className="product-image1">
-                        <img
-                          className="product__image"
-                          src="https://cdn.shopify.com/s/files/1/0508/7461/3942/products/Free2classic_35f34fc0-30dc-43ab-9d14-4b2e53b34764_400x.png?v=1658806095"
-                          alt=""
-                        />
-                      </div>
-                      <div className="Product__info">
-                        <h6 className="ProductItem__Title">
-                          <a href="/products/soundpeats-sonic-wireless-earbuds text-dark">
-                            SOUNDPEATS Sonic True Wireless Earbuds
-                          </a>
-                        </h6>
-                        <div className="ProductItem__PriceList">
-                          <span className="ProductItem__Price">$63.99</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="Product__Item">
-                      <img
-                        className="product__image"
-                        src="https://cdn.shopify.com/s/files/1/0508/7461/3942/products/12_a0483a3f-62bd-4ec1-b981-26835553a97f_400x.png?v=1632293892"
-                        alt=""
-                      />
-                      <div className="Product__info">
-                        <h6 className="ProductItem__Title">
-                          <a href="/products/soundpeats-t3-tws-earbuds">
-                            SOUNDPEATS T3 Active Noise Canceling TWS Earbuds
-                          </a>
-                        </h6>
-                        <div className="ProductItem__PriceList">
-                          <span className="ProductItem__Price">$55.99</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="Product__Item">
-                      <img
-                        className="product__image"
-                        src="https://cdn.shopify.com/s/files/1/0508/7461/3942/products/H1_1_1_adobespark_400x.png?v=1630635189"
-                        alt=""
-                      />
-                      <div className="Product__info">
-                        <h6 className="ProductItem__Title">
-                          <a href="/products/soundpeats-h1-wireless-earbuds">
-                            SOUNDPEATS H1 Hybrid Dual Driver True Wireless
-                            Earbuds
-                          </a>
-                        </h6>
-                        <div className="ProductItem__PriceList">
-                          <span className="ProductItem__Price Price--highlight">
-                            $89.99
-                          </span>
-                          <span className="ProductItem__Price Price--compareAt">
-                            $119.99
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="Product__Item">
-                      <img
-                        className="product__image"
-                        src="https://cdn.shopify.com/s/files/1/0508/7461/3942/products/TFp_1_1_adobespark_edbaa5b5-383f-4bd1-a4ef-0f6b4e7006cf_400x.png?v=1630635175"
-                        alt=""
-                      />
-                      <div className="Product__info">
-                        <h6 className="ProductItem__Title">
-                          <a href="/products/soundpeats-truefree-plus-wireless-in-ear-sport-earbuds">
-                            SOUNDPEATS TrueFree + True Wireless In-Ear Sports
-                            Earbuds
-                          </a>
-                        </h6>
-                        <div className="ProductItem__PriceList">
-                          <span className="ProductItem__Price">$49.99</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="Product__Item">
-                      <img
-                        className="product__image"
-                        src="https://cdn.shopify.com/s/files/1/0508/7461/3942/products/T2_1_1_1__adobespark_400x.png?v=1630635188"
-                        alt=""
-                      />
-                      <div className="Product__info">
-                        <h6 className="ProductItem__Title">
-                          <a href="/products/soundpeats-t2-wireless-earbuds">
-                            SOUNDPEATS T2 True Wireless Hybrid ANC In-Ear
-                            Earbuds
-                          </a>
-                        </h6>
-                        <div className="ProductItem__PriceList">
-                          <span className="ProductItem__Price">$69.99</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="Product__Item">
-                      <img
-                        className="product__image"
-                        src="https://cdn.shopify.com/s/files/1/0508/7461/3942/products/3se_1_1_adobespark_400x.png?v=1630635174"
-                        alt=""
-                      />
-                      <div className="Product__info">
-                        <h6 className="ProductItem__Title">
-                          <a href="/products/soundpeats-truengine-3-se-wireless-in-ear-hifi-earbuds">
-                            SOUNDPEATS Truengine 3 SE True Wireless In-Ear HiFi
-                            Earbuds
-                          </a>
-                        </h6>
-                        <div className="ProductItem__PriceList">
-                          <span className="ProductItem__Price">$57.99</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="Product__Item">
-                      <img
-                        className="product__image"
-                        src="https://cdn.shopify.com/s/files/1/0508/7461/3942/products/Air3deluxe-2_400x.png?v=1658805139"
-                        alt=""
-                      />
-                      <div className="Product__info">
-                        <h6 className="ProductItem__Title">
-                          <a href="/products/soundpeats-air3-deluxe-wireless-earbuds">
-                            SOUNDPEATS Air3 Deluxe Wireless Earbuds
-                          </a>
-                        </h6>
-                        <div className="ProductItem__PriceList">
-                          <span className="ProductItem__Price">$59.99</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="Product__Item">
-                      <img
-                        className="product__image"
-                        src="https://cdn.shopify.com/s/files/1/0508/7461/3942/products/Minipro_200x.png?v=1658806458"
-                        alt=""
-                      />
-                      <div className="Product__info">
-                        <h6 className="ProductItem__Title">
-                          <a href="/products/soundpeats-mini-pro-wireless-earbuds">
-                            SOUNDPEATS Mini Pro Wireless Earbuds
-                          </a>
-                        </h6>
-                        <div className="ProductItem__PriceList">
-                          <span className="ProductItem__Price Price--highlight">
-                            $69.99
-                          </span>
-                          <span className="ProductItem__Price Price--compareAt">
-                            $79.99
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="Product__Item">
-                      <img
-                        className="product__image"
-                        src="https://cdn.shopify.com/s/files/1/0508/7461/3942/products/Sonic_1_1_adobespark-min_400x.png?v=1630636324"
-                        alt=""
-                      />
-                      <div className="Product__info">
-                        <h6 className="ProductItem__Title">
-                          <a href="/products/soundpeats-sonic-wireless-earbuds">
-                            SOUNDPEATS Sonic True Wireless Earbuds
-                          </a>
-                        </h6>
-                        <div className="ProductItem__PriceList">
-                          <span className="ProductItem__Price">$63.99</span>
-                        </div>
-                      </div>
-                    </div>
+                    <Product
+                      Image="https://cdn.shopify.com/s/files/1/0508/7461/3942/products/Free2classic_35f34fc0-30dc-43ab-9d14-4b2e53b34764_400x.png?v=1658806095"
+                      Title={
+                        <a href="/products/soundpeats-sonic-wireless-earbuds" className="text-dark text-decoration-none">
+                          SOUNDPEATS Sonic True Wireless Earbuds
+                        </a>
+                      }
+                      Price={63.99}
+                    />
+
+                    <Product
+                      Image="https://cdn.shopify.com/s/files/1/0508/7461/3942/products/12_a0483a3f-62bd-4ec1-b981-26835553a97f_400x.png?v=1632293892"
+                      Title={
+                        <a href="/products/soundpeats-t3-tws-earbuds" className="text-dark text-decoration-none">
+                          SOUNDPEATS T3 Active Noise Canceling TWS Earbuds
+                        </a>
+                      }
+                      Price={55.99}
+                    />
+
+                    <Product
+                      Image="https://cdn.shopify.com/s/files/1/0508/7461/3942/products/H1_1_1_adobespark_400x.png?v=1630635189"
+                      Title={
+                        <a href="/products/soundpeats-h1-wireless-earbuds" className="text-dark text-decoration-none">
+                          SOUNDPEATS H1 Hybrid Dual Driver True Wireless Earbuds
+                        </a>
+                      }
+                      Price={119.99}
+                      actual__Price={89.99}
+                    />
+
+                    <Product 
+                    Image="https://cdn.shopify.com/s/files/1/0508/7461/3942/products/TFp_1_1_adobespark_edbaa5b5-383f-4bd1-a4ef-0f6b4e7006cf_400x.png?v=1630635175" 
+                    Title={<a href="/products/soundpeats-truefree-plus-wireless-in-ear-sport-earbuds" className="text-dark text-decoration-none">
+                    SOUNDPEATS TrueFree + True Wireless In-Ear Sports
+                    Earbuds
+                  </a>} 
+                    Price={49.99} />
+
+                    <Product 
+                    Image="https://cdn.shopify.com/s/files/1/0508/7461/3942/products/T2_1_1_1__adobespark_400x.png?v=1630635188" 
+                    Title={<a href="/products/soundpeats-t2-wireless-earbuds" className="text-dark text-decoration-none">
+                    SOUNDPEATS T2 True Wireless Hybrid ANC In-Ear
+                    Earbuds
+                  </a>} 
+                    Price={69.99} />
+
+                    <Product 
+                    Image="https://cdn.shopify.com/s/files/1/0508/7461/3942/products/3se_1_1_adobespark_400x.png?v=1630635174" 
+                    Title={<a href="/products/soundpeats-truengine-3-se-wireless-in-ear-hifi-earbuds" className="text-dark text-decoration-none">
+                    SOUNDPEATS Truengine 3 SE True Wireless In-Ear HiFi
+                    Earbuds
+                  </a>} 
+                    Price={57.99} />
+
+                    <Product 
+                    Image="https://cdn.shopify.com/s/files/1/0508/7461/3942/products/Air3deluxe-2_400x.png?v=1658805139" 
+                    Title={<a href="/products/soundpeats-air3-deluxe-wireless-earbuds" className="text-dark text-decoration-none">
+                    SOUNDPEATS Air3 Deluxe Wireless Earbuds
+                  </a>} 
+                    Price={59.99} />
+
+                    <Product 
+                    Image="https://cdn.shopify.com/s/files/1/0508/7461/3942/products/Minipro_200x.png?v=1658806458" 
+                    Title={<a href="/products/soundpeats-mini-pro-wireless-earbuds" className="text-dark text-decoration-none">
+                    SOUNDPEATS Mini Pro Wireless Earbuds
+                  </a>} 
+                    Price={79.99} 
+                    actual__Price={69.99} />
+
+                    <Product 
+                    Image="https://cdn.shopify.com/s/files/1/0508/7461/3942/products/Sonic_1_1_adobespark-min_400x.png?v=1630636324" 
+                    Title={<a href="/products/soundpeats-sonic-wireless-earbuds" className="text-dark text-decoration-none">
+                    SOUNDPEATS Sonic True Wireless Earbuds
+                  </a>} 
+                    Price={63.99} />
                   </Slider>
                 </div>
               </div>
