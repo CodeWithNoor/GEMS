@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../Css/Blog.css";
-import Product from "./BlogCard";
+import Blog__Cards from "./BlogCard";
 
 const Blogs = () => {
   const settings = {
@@ -161,18 +161,18 @@ const Blogs = () => {
           {/* *************************************Product Cards********************************************* */}
           <div className="Blog container">
             <div className="Blog__row row">
-              <Product
+              <Blog__Cards
                 title="News"
                 image="https://cdn.shopify.com/s/files/1/0508/7461/3942/articles/Halloween_Party_Flyer_A4_600x.jpg?v=1666003195"
                 heading="Halloween Giveaway | Win Newest LIFE Wireless Earbuds"
                 description=" Thought it was a hoot and a half? We have other channels for more giveaways to Oct,31! Go again for more chances: Facebook Instgram Twittwer ..."
               />
-              <Product
+              <Blog__Cards
                 image="https://cdn.shopify.com/s/files/1/0508/7461/3942/articles/IMG_5031_800x.jpg?v=1665328678"
                 heading="Review | SOUNDPEATS Air3 Deluxe"
                 description=' Google "wireless earbuds", you will find thousands of models from hundreds of manufacturers. The truth is that there’s an excess of earbuds the...'
               />
-              <Product
+              <Blog__Cards
                 image="https://cdn.shopify.com/s/files/1/0508/7461/3942/articles/mini_pro_b6a881b9-4235-450d-ac8e-2acbdda12e2d_600x.jpg?v=1662006074"
                 heading="Review | SOUNDPEATS Mini Pro"
                 description="SOUNDPEATS advocates smart technology and is committed to integrating music into daily life. They want to create scientific and innovative True Wir..."
@@ -180,20 +180,20 @@ const Blogs = () => {
             </div>
 
             <div className="Blog__row row">
-              <Product
+              <Blog__Cards
                 image="https://cdn.shopify.com/s/files/1/0508/7461/3942/articles/Untitled_design_1_800x.png?v=1661425882"
                 heading="Review | SOUNDPEATS Air3 Pro"
                 description='  "Great Value" "Highly Recommmend" "Awesome"… There are rave reviews on SOUNDPEATS Air3 Pro since these true wireless earbuds was launche...'
               />
 
-              <Product
+              <Blog__Cards
                 title="ANC"
                 image="https://cdn.shopify.com/s/files/1/0508/7461/3942/articles/4_600x.jpg?v=1655365834"
                 heading="SOUNDPEATS Air3 Pro - Pre-launch l $39.99"
                 description=" SOUNDPEATS Hybrid ANC Air3 Pro will be launched on 28th June in the US Amazon. There will be a limited-time online deal price of $39.99 on a first..."
               />
 
-              <Product
+              <Blog__Cards
                 image="https://cdn.shopify.com/s/files/1/0508/7461/3942/articles/1_16_800x.jpg?v=1654156012"
                 heading="SOUNDPEATS Free2 Classic Video Review - June 2022"
                 description=" SOUNDPEATS Free2 Classic has Long battery life, Innovative exterior design, 6mm bio-diaphragm speaker, Touch control with deal price."
@@ -201,14 +201,14 @@ const Blogs = () => {
             </div>
 
             <div className="Blog__row row">
-              <Product
+              <Blog__Cards
                 image="https://cdn.shopify.com/s/files/1/0508/7461/3942/articles/3_800x.jpg?v=1630296836"
                 title="press releases"
                 heading=" New Arrival | SOUNDPEATS Launches Air3 Wireless Earbuds in the US"
                 description="Priced at $49.99, SOUNDPEATS Air3 offers superior sound quality at a reasonable price. SOUNDPEATS’ new Air3 earbuds feature a 14.2 mm dynamic drive..."
               />
 
-              <Product
+              <Blog__Cards
                 image="https://cdn.shopify.com/s/files/1/0508/7461/3942/articles/KTA2754_800x.jpg?v=1630057268"
                 title="press releases"
                 heading=" SOUNDPEATS Introduces New H1 True Wireless Earbuds in the United States"
