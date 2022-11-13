@@ -14,9 +14,16 @@
   .ProductItem {
     width: 63%;
     border: 1px solid rgba(0, 0, 0, 0.112);
-    height: 425px;
+    min-height: 425px;
   }
   
+  .productItem__Title{
+    font-size: 15px;
+    font-weight: 700;
+    padding: 10px;
+    margin: 10px;
+  }
+
   .ProductItem__Image {
     width: 100%;
   }
@@ -35,26 +42,58 @@
     margin: 10px;
   }
   
+  .ProductItem__PriceList {
+    margin-top: -20px;
+    color: rgb(255, 255, 255);
+  }
+
   .ProductItem__Price {
     font-size: 15px;
-    color: #cd151502;
     font-weight: 500;
+    margin: 10px;
+    padding: 10px;
   }
   
   .ProductItem__Price:hover {
-    font-size: 15px;
     color: #0707079b;
-    font-weight: 500;
   }
   
-  .Price--compareAt {
+  .Price--compareAt{
     position: relative;
-    margin-left: 10px;
+    margin-left: 5px;
     display: inline-block;
     text-decoration: line-through;
   }
   
-  .Price--compareAt:hover {
+  .Price--compareAt:hover{
     color: red;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .ProductItem {
+      width: 100%;
+      height: 250px;
+    }
+   
+    .ProductItem > .ShopNow {
+      font-size: 12px;
+      margin-top: -10px;
+    }
+  
+    .product__image {
+      width: 100%;
+      padding: 0px;
+      margin: 0px;
+  }
+
+    .productItem__Title{
+      font-size: 5px;
+    }
+  
+    .FeatureQuote {
+      width: 100%;
+      font-size: 13px;
+    }
   }
   
