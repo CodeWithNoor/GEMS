@@ -89,6 +89,15 @@
   display: none;
 }
 
+.ProductItem__container {
+  width: 100%;
+  height: 100%;
+  flex-direction: row;
+  margin-top: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
 .slick-prev {
   left: -25px;
 }
@@ -186,5 +195,10 @@
     display: flex;
     flex-direction: row;
     margin-top: 50px;
+  }
+
+  .FeatureQuote {
+    width: 100%;
+    font-size: 13px;
   }
 }
