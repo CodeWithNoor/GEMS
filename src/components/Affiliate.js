@@ -48,16 +48,7 @@ const Affiliate = () => {
               <div className="item bold_title is-active">HOW IT WORKS</div>
               <div className="item bold_title">YOUR BENEFITS</div>
               <div className="item bold_title">YOUR CUSTOMERS BENEFITS</div>
-              <div
-                className="item bold_title"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseWidthExample"
-                aria-expanded="false"
-                aria-controls="collapseWidthExample"
-              >
-                JOIN US
-              </div>
+              <div className="item bold_title">JOIN US</div>  
             </div>
           </div>
           <hr style={{ height: "1px" }} />
