@@ -9,7 +9,7 @@ import Home from './components/Home';
 // import HelpCenter from './components/HelpCenter';
 // import Download from './components/Download';
 import Blog from './components/Blog';
-// import Affiliate from './components/Affiliate';
+import Affiliate from './components/Affiliate';
 // import WhereToBuy from './components/WhereToBuy';
 // import Cart from './components/Cart';
 // import Search from './components/Search';
@@ -49,8 +49,8 @@ const ScrollUpFunc = async function () {
           <Route path="/helpcenter" element={<HelpCenter />} />
           <Route path="/download" element={<Download />} /> */}
           <Route path="/blog" element={<Blog />} />
-          {/* <Route path="/affiliate" element={<Affiliate />} />
-          <Route path="/wheretobuy" element={<WhereToBuy />} />
+          <Route path="/affiliate" element={<Affiliate />} />
+          {/* <Route path="/wheretobuy" element={<WhereToBuy />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/search" element={<Search />} />
           <Route path="/login" element={<Login />} />
@@ -58,10 +58,10 @@ const ScrollUpFunc = async function () {
           <Route path="/user" element={<User />} />
           <Route path="/about" element={<About />} />
           <Route path="/newsroom" element={<NewsRoom />} />
-          <Route path="/user" element={<User />} /> */}
+        <Route path="/user" element={<User />} /> */}
         </Routes>
         <a href="#Back_to_Top" className="btn scrollUp bg-white border-5 border-white"><i className="fa fa-angle-up" /></a>
-        <Footer />
+      <Footer /> 
       </BrowserRouter>
 
     </div>

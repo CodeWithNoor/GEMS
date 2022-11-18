@@ -1,0 +1,30 @@
+.apc-content{
+    padding-top: 36px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.apc-content .cell{
+    max-width: 215px;
+    position: relative;
+    text-align: center;
+}
+
+.apc-content  .image{
+    max-width: 62px;
+    margin: 0 auto;
+}
+
+.apc-content .content{
+    font-size: 12px;
+    line-height: 1.65;
+    font-weight: bold;
+    margin-top: 36px;
+}
+
+.apc-content .arrow{
+    margin: 25px 5px 0;
+}
