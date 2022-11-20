@@ -18,7 +18,7 @@ import Affiliate from './components/Affiliate';
 // import User from './components/User';
 // import About from './components/About';
 // import NewsRoom from './components/NewsRoom';
-import Footer from './components/Footer';
+// import Footer from './components/Footer';
 
 
 function App() {
@@ -61,7 +61,7 @@ const ScrollUpFunc = async function () {
         <Route path="/user" element={<User />} /> */}
         </Routes>
         <a href="#Back_to_Top" className="btn scrollUp bg-white border-5 border-white"><i className="fa fa-angle-up" /></a>
-      <Footer /> 
+      {/* <Footer />  */}
       </BrowserRouter>
 
     </div>

@@ -2,25 +2,15 @@ import React from "react";
 import "../Css/Affilitate.css";
 import APC from "../components/Affilitate_inner";
 import arrow from "../images/arrow.png";
+import { useState } from "react";
 
 const Affiliate = () => {
-  // const data = [
-  //   {
-  //     label: "HOW DOES THE PROGRAM WORK?",
-  //     contents:
-  //       "The SOUNDPEATS Affiliate Program allows you to make money by referring customers. Each time you refer a customer to one of our websites and that customer makes a purchase, you earn a commission (a percentage of each sale). We handle the transaction processing, fulfillment and customer service. We provide you with detailed reports on sales that were referred from your website and every month, we send you a check for the commission you earned.",
-  //   },
-  //   {
-  //     label: "WHAT DOES IT COST TO JOIN?",
-  //     contents:
-  //       "Applying to and participating in the SOUNDPEATS Affiliate Program is absolutely FREE. There are no fees of any kind - there is no charge to apply and no minimum sales requirement.",
-  //   },
-  //   {
-  //     label: "HOW DO I GET STARTED?",
-  //     contents:
-  //       "Register a ShareASale affiliate account. Sign up for SOUNDPEATS & ShareASale Program. Get accepted to the program. Create links to SOUNDPEATS brands from the Ads section on Impact. Promote SOUNDPEATS family of brands on your site. Login to Impact at any time to see reports of how your website is doing, how many people are browsing and what they're buying. Run reports your way whenever you want - they're updated every day. Get paid up to 20% commission!",
-  //   },
-  // ];
+
+  const [toggleBtn, setToggleBtn] = useState(1)
+
+  const handleToggleTab = (index) => {
+    setToggleBtn(index)
+  }
 
   return (
     <section>
@@ -45,17 +35,17 @@ const Affiliate = () => {
           <hr style={{ height: "1px" }} />
           <div className="affilitate__content">
             <div className="affilitate__nav__item">
-              <div className="item bold_title is-active">HOW IT WORKS</div>
-              <div className="item bold_title">YOUR BENEFITS</div>
-              <div className="item bold_title">YOUR CUSTOMERS BENEFITS</div>
-              <div className="item bold_title">JOIN US</div>  
+              <div className={toggleBtn === 1 ? "item bold_title is-active": "item bold_title"} onClick={() => handleToggleTab(1)}>HOW IT WORKS</div>
+              <div className={toggleBtn === 2 ? "item bold_title is-active": "item bold_title"} onClick={() => handleToggleTab(2)}>YOUR BENEFITS</div>
+              <div className={toggleBtn === 3 ? "item bold_title is-active": "item bold_title"} onClick={() => handleToggleTab(3)}>YOUR CUSTOMERS BENEFITS</div>
+              <div className={toggleBtn === 4 ? "item bold_title is-active": "item bold_title"} onClick={() => handleToggleTab(4)}>JOIN US</div>  
             </div>
           </div>
           <hr style={{ height: "1px" }} />
 
           <div className="affilitate_nav_content">
             <div className="anc-inner">
-              <div className="box box-1 active">
+              <div className={toggleBtn === 1 ? "box_active": "box"}>
                 <h2 className="title">HOW IT WORKS</h2>
                 <div className="content">
                   1. Affiliate promotes SOUNDPEATS on social platforms
@@ -68,7 +58,7 @@ const Affiliate = () => {
                 </div>
               </div>
 
-              <div className="box box-2">
+              <div className={toggleBtn === 2 ? "box_active": "box"}>
                 <h2 className="title">YOUR BENEFITS</h2>
                 <div className="content">
                   1. 10%~20% commission on each referred sale.
@@ -82,7 +72,7 @@ const Affiliate = () => {
                 </div>
               </div>
 
-              <div className="box box-3">
+              <div className={toggleBtn === 3 ? "box_active": "box"}>
                 <h2 className="title">YOUR CUSTOMERS BENEFITS</h2>
                 <div className="content">
                   1. Different styles of latest earbuds and headphones available
@@ -95,13 +85,13 @@ const Affiliate = () => {
                 </div>
               </div>
 
-              <div className="box box-4 ccollapse" id="collapseExample">
+              <div className={toggleBtn === 4 ? "box_active": "box"}>
                 <h2 className="title">JOIN US</h2>
                 <div className="content">
-                  <h2 style={{ fontSize: "2vw" }}>
-                    <b>REGISTER NOW!</b>
+                  <h2 style={{ fontSize: "2vw", fontWeight: "500"}}>
+                    REGISTER NOW!
                   </h2>
-                  <h2 style={{ fontSize: "3vw" }}>* 10% ~ 20% *</h2>commission
+                  <h2 style={{ fontSize: "3vw", paddingTop: '25px', fontWeight: "400"}}>* 10% ~ 20% *</h2>commission
                   per order
                 </div>
               </div>
@@ -184,7 +174,7 @@ const Affiliate = () => {
               <div className="ajc-content">
                 <div className="cell">
                   <img
-                    className
+                    className="cell_image"
                     src="https://cdn.shopify.com/s/files/1/0508/7461/3942/files/4532de5a6fc6f01392a1576217f2fd5c_296x.png?v=1629257809"
                     alt=""
                   />
