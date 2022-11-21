@@ -3,14 +3,24 @@ import "../Css/Affilitate.css";
 import APC from "../components/Affilitate_inner";
 import arrow from "../images/arrow.png";
 import { useState } from "react";
+import { data } from "../components/data";
 
 const Affiliate = () => {
-
-  const [toggleBtn, setToggleBtn] = useState(1)
+  const [toggleBtn, setToggleBtn] = useState(1);
 
   const handleToggleTab = (index) => {
-    setToggleBtn(index)
-  }
+    setToggleBtn(index);
+  };
+
+  const [selected, setSelected] = useState(null);
+
+  const toggle = (i) => {
+    if (selected === i) {
+      return setSelected(null);
+    } else {
+      setSelected(i);
+    }
+  };
 
   return (
     <section>
@@ -35,17 +45,53 @@ const Affiliate = () => {
           <hr style={{ height: "1px" }} />
           <div className="affilitate__content">
             <div className="affilitate__nav__item">
-              <div className={toggleBtn === 1 ? "item bold_title is-active": "item bold_title"} onClick={() => handleToggleTab(1)}>HOW IT WORKS</div>
-              <div className={toggleBtn === 2 ? "item bold_title is-active": "item bold_title"} onClick={() => handleToggleTab(2)}>YOUR BENEFITS</div>
-              <div className={toggleBtn === 3 ? "item bold_title is-active": "item bold_title"} onClick={() => handleToggleTab(3)}>YOUR CUSTOMERS BENEFITS</div>
-              <div className={toggleBtn === 4 ? "item bold_title is-active": "item bold_title"} onClick={() => handleToggleTab(4)}>JOIN US</div>  
+              <div
+                className={
+                  toggleBtn === 1
+                    ? "item bold_title is-active"
+                    : "item bold_title"
+                }
+                onClick={() => handleToggleTab(1)}
+              >
+                HOW IT WORKS
+              </div>
+              <div
+                className={
+                  toggleBtn === 2
+                    ? "item bold_title is-active"
+                    : "item bold_title"
+                }
+                onClick={() => handleToggleTab(2)}
+              >
+                YOUR BENEFITS
+              </div>
+              <div
+                className={
+                  toggleBtn === 3
+                    ? "item bold_title is-active"
+                    : "item bold_title"
+                }
+                onClick={() => handleToggleTab(3)}
+              >
+                YOUR CUSTOMERS BENEFITS
+              </div>
+              <div
+                className={
+                  toggleBtn === 4
+                    ? "item bold_title is-active"
+                    : "item bold_title"
+                }
+                onClick={() => handleToggleTab(4)}
+              >
+                JOIN US
+              </div>
             </div>
           </div>
           <hr style={{ height: "1px" }} />
 
           <div className="affilitate_nav_content">
             <div className="anc-inner">
-              <div className={toggleBtn === 1 ? "box_active": "box"}>
+              <div className={toggleBtn === 1 ? "box_active" : "box"}>
                 <h2 className="title">HOW IT WORKS</h2>
                 <div className="content">
                   1. Affiliate promotes SOUNDPEATS on social platforms
@@ -58,7 +104,7 @@ const Affiliate = () => {
                 </div>
               </div>
 
-              <div className={toggleBtn === 2 ? "box_active": "box"}>
+              <div className={toggleBtn === 2 ? "box_active" : "box"}>
                 <h2 className="title">YOUR BENEFITS</h2>
                 <div className="content">
                   1. 10%~20% commission on each referred sale.
@@ -72,7 +118,7 @@ const Affiliate = () => {
                 </div>
               </div>
 
-              <div className={toggleBtn === 3 ? "box_active": "box"}>
+              <div className={toggleBtn === 3 ? "box_active" : "box"}>
                 <h2 className="title">YOUR CUSTOMERS BENEFITS</h2>
                 <div className="content">
                   1. Different styles of latest earbuds and headphones available
@@ -85,14 +131,22 @@ const Affiliate = () => {
                 </div>
               </div>
 
-              <div className={toggleBtn === 4 ? "box_active": "box"}>
+              <div className={toggleBtn === 4 ? "box_active" : "box"}>
                 <h2 className="title">JOIN US</h2>
                 <div className="content">
-                  <h2 style={{ fontSize: "2vw", fontWeight: "500"}}>
+                  <h2 style={{ fontSize: "2vw", fontWeight: "500" }}>
                     REGISTER NOW!
                   </h2>
-                  <h2 style={{ fontSize: "3vw", paddingTop: '25px', fontWeight: "400"}}>* 10% ~ 20% *</h2>commission
-                  per order
+                  <h2
+                    style={{
+                      fontSize: "3vw",
+                      paddingTop: "25px",
+                      fontWeight: "400",
+                    }}
+                  >
+                    * 10% ~ 20% *
+                  </h2>
+                  commission per order
                 </div>
               </div>
 
@@ -210,69 +264,25 @@ const Affiliate = () => {
               <h5 className="faqs__Heading text-start">FAQS</h5>
             </div>
 
-            <div className="accordion" id="accordionPanelsStayOpenExample">
-              <div className="accordion-item">
-                <div
-                  className="question"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#panelsStayOpen-collapseTwo"
-                  aria-expanded="false"
-                  aria-controls="panelsStayOpen-collapseTwo"
-                >
-                 HOW DOES THE PROGRAM WORK?
-                </div>
-                <div
-                  id="panelsStayOpen-collapseTwo"
-                  className="accordion-collapse collapse"
-                  aria-labelledby="panelsStayOpen-headingTwo"
-                >
-                  <div className="contents">
-                  The SOUNDPEATS Affiliate Program allows you to make money by referring customers. Each time you refer a customer to one of our websites and that customer makes a purchase, you earn a commission (a percentage of each sale). We handle the transaction processing, fulfillment and customer service. We provide you with detailed reports on sales that were referred from your website and every month, we send you a check for the commission you earned.
-                  </div>
-                </div>
-              </div>
-              <div className="accordion-item">
-                <div
-                  className="question"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#panelsStayOpen-collapseThree"
-                  aria-expanded="false"
-                  aria-controls="panelsStayOpen-collapseThree"
-                >
-                  WHAT DOES IT COST TO JOIN?
-                </div>
-                <div
-                  id="panelsStayOpen-collapseThree"
-                  className="accordion-collapse collapse"
-                  aria-labelledby="panelsStayOpen-headingThree"
-                >
-                  <div className="contents">
-                  Applying to and participating in the SOUNDPEATS Affiliate Program is absolutely FREE. There are no fees of any kind - there is no charge to apply and no minimum sales requirement.
-                  </div>
-                </div>
-              </div>
-              <div className="accordion-item">
-                <div
-                  className="question"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#panelsStayOpen-collapseFour"
-                  aria-expanded="false"
-                  aria-controls="panelsStayOpen-collapseFour"
-                >
-                  HOW DO I GET STARTED?
-                </div>
-                <div
-                  id="panelsStayOpen-collapseFour"
-                  className="accordion-collapse collapse"
-                  aria-labelledby="panelsStayOpen-headingFour"
-                >
-                  <div className="contents">
-                  Register a ShareASale affiliate account. Sign up for SOUNDPEATS & ShareASale Program. Get accepted to the program. Create links to SOUNDPEATS brands from the Ads section on Impact. Promote SOUNDPEATS family of brands on your site. Login to Impact at any time to see reports of how your website is doing, how many people are browsing and what they're buying. Run reports your way whenever you want - they're updated every day. Get paid up to 20% commission!
-                  </div>
-                </div>
+            <div className="wrapper" style={{ marginBottom: "70px" }}>
+              <div className="accordion">
+                {data.map((item, i) => (
+                  <>
+                    <div className="accordion__item">
+                      <div className="qts" onClick={() => toggle(i)}>
+                        <h6>{item.question}</h6>
+                        <span>{selected === i ? "-" : "+"}</span>
+                      </div>
+                      <div
+                        className={
+                          selected === i ? "contents show" : "contents"
+                        }
+                      >
+                        {item.answer}
+                      </div>
+                    </div>
+                  </>
+                ))}
               </div>
             </div>
           </div>
