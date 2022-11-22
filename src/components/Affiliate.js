@@ -24,8 +24,8 @@ const Affiliate = () => {
 
   return (
     <section>
-      <div className="affilitate__banner">
-        <div className="affilitate__banner container my-5">
+      <div className="affilitate__banners">
+        <div className="affilitate__banner my-5">
           <div className="affilitate__banner__image">
             <img
               className="hero__image"
@@ -182,32 +182,32 @@ const Affiliate = () => {
               <h2 className="section_header_heading">PROCESS</h2>
             </div>
 
-            <div className="apc-content">
-              <APC
+            <div className="apc-content row">
+              <APC 
                 image="https://cdn.shopify.com/s/files/1/0508/7461/3942/files/5c1c18adb65c7850c0e95c123d529df6_f95a88f2-592a-42fc-b4b3-2e6c412902c2_62x.png?v=1629253001"
                 title="Visit site to apply for the affiliate program"
                 arrow_icon={arrow}
               />
 
-              <APC
+              <APC 
                 image="https://cdn.shopify.com/s/files/1/0508/7461/3942/files/1_36f57dd6-2a14-4147-bd83-4d3fb5e49d7d_61x.png?v=1629252916"
                 title="Share an affiliate link"
                 arrow_icon={arrow}
               />
 
-              <APC
+              <APC 
                 image="https://cdn.shopify.com/s/files/1/0508/7461/3942/files/2_0e4b4cf2-d286-4300-b1b4-3de8a154a7cd_61x.png?v=1629252937"
                 title="Get customers to make a purchase"
                 arrow_icon={arrow}
               />
 
-              <APC
+              <APC 
                 image="https://cdn.shopify.com/s/files/1/0508/7461/3942/files/4_f5d49b71-b701-4f24-8fba-8e112bcf9cc7_61x.png?v=1629252948"
                 title="Wait for your order to be confirmed"
                 arrow_icon={arrow}
               />
 
-              <APC
+              <APC 
                 image="https://cdn.shopify.com/s/files/1/0508/7461/3942/files/5_bda96c6a-509a-46d5-acdb-6b2df2022821_61x.png?v=1629253212"
                 title="Get your commission!"
               />
@@ -259,7 +259,7 @@ const Affiliate = () => {
         </div>
 
         <div className="affilitate-faq-container">
-          <div className="faqs container">
+          <div className="faqs">
             <div className="commonHeader">
               <h5 className="faqs__Heading text-start">FAQS</h5>
             </div>

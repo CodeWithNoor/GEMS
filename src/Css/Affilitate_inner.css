@@ -1,31 +1,58 @@
-.apc-content{
-    padding-top: 36px;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    font-size: 15px;
-    font-weight: bold;
-    overflow: hidden;
+.apc-content {
+  padding-top: 36px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  font-size: 15px;
+  font-weight: bold;
+  overflow: hidden;
 }
 
-.apc-content .cell{
-    max-width: 215px;
-    position: relative;
-    text-align: center;
+.apc-content .cell {
+  max-width: 215px;
+  position: relative;
+  text-align: center;
 }
 
-.apc-content  .image{
-    max-width: 62px;
-    margin: 0 auto;
+.apc-content .image {
+  max-width: 62px;
+  margin: 0 auto;
 }
 
-.apc-content .content{
-    font-size: 12px;
-    line-height: 1.65;
-    font-weight: bold;
-    margin-top: 36px;
+.apc-content .content {
+  font-size: 12px;
+  line-height: 1.65;
+  font-weight: bold;
+  margin-top: 36px;
 }
 
-.apc-content .arrow{
-    margin: 25px 5px 0;
+.apc-content .arrow {
+  margin: 25px 5px 0;
+}
+
+@media (max-width: 768px) {
+  .apc-content {
+    padding-bottom: 68px;
+    justify-content: flex-start;
+    margin-bottom: -43px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .apc-content .cell {
+    width: 80%;
+    margin-bottom: 43px;
+  }
+
+  .col-2 {
+    width: 33%;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .col-2 {
+    width: 50%;
+    flex-wrap: wrap;
+  }
 }

@@ -2,7 +2,7 @@
 import './App.css';
 import React from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Header from './components/Header';
+ import Header from './components/Header';
 import Home from './components/Home';
 // import AllProducts from './components/AllProducts';
 // import NewArrivals from './components/NewArrivals';
@@ -41,7 +41,7 @@ const ScrollUpFunc = async function () {
   return (
     <div id="Back_to_Top">
       <BrowserRouter>
-        <Header />
+         <Header /> 
         <Routes>
           <Route path='/' element={<Home myFunc={ScrollUpFunc}/>} />
           {/* <Route path="/allproducts" element={<AllProducts />} />
