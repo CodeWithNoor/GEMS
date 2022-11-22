@@ -1,5 +1,5 @@
 import React from "react";
-import '../Css/Affilitate_inner.css'
+import '../Css/Affiliate_inner.css'
 
 const Affilitate_inner = ({ image, title, arrow_icon }) => {
   return (

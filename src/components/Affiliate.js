@@ -1,6 +1,6 @@
 import React from "react";
-import "../Css/Affilitate.css";
-import APC from "../components/Affilitate_inner";
+import "../Css/Affiliate.css";
+import APC from "../components/Affiliate_inner";
 import arrow from "../images/arrow.png";
 import { useState } from "react";
 import { data } from "../components/data";
