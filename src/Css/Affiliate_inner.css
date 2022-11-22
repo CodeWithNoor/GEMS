@@ -30,15 +30,14 @@
   margin: 25px 5px 0;
 }
 
-@media (max-width: 768px) {
+
+@media screen and (max-width: 768px) {
   .apc-content {
     padding-bottom: 68px;
     justify-content: flex-start;
     margin-bottom: -43px;
   }
-}
 
-@media screen and (max-width: 768px) {
   .apc-content .cell {
     width: 80%;
     margin-bottom: 43px;
