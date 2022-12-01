@@ -40,7 +40,7 @@ function App(props) {
   return (
  
     <PayPalScriptProvider  deferLoading={true} options={{
-      // "client-id":process.env.REACT_APP_PAYPAL_CLIENT_ID ---> //personalAPI
+      // "client-id":process.env.REACT_APP_PAYPAL_CLIENT_ID 
       initialOptions
     }}>
     <div id="Back_to_Top">

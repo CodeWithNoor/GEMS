@@ -26,9 +26,6 @@
     margin: 40px 0px;
 }
 
-.paypal__payment > .btn > .paypal-buttons >.paypal-button-row >.paypal-button-number-1{
-  display: none;
-}
 .express__checkout > .Paypal__checkout{
     font-size: 13px;
     color: black;
@@ -161,8 +158,6 @@ margin: 0px 5px;
 .checkout__info > .payment>.cart_item>.cart_item_details>.cart_item_details_price>.cart_item_details_info_priceList>.oldPrice {
   text-decoration: line-through;
 }
-
-
 
 
 
